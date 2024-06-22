@@ -1,0 +1,23 @@
+digraph MyEgress {
+subgraph cluster {
+graph [
+fontsize="22pt", label=MyEgress, style=bold];
+0[label=__START__, margin="", shape=rectangle, style=solid];
+1[label=__EXIT__, margin="", shape=rectangle, style=solid];
+2[label="hdr.mpls.isValid();", margin="", shape=rectangle, style=rounded];
+3[label=check_is_egress_border_0, margin="", shape=ellipse, style=solid];
+4[label="exact: standard_metadata.egress_port\n", margin="", shape=rectangle, style=rounded];
+5[label=NoAction_4, margin="", shape=ellipse, style=solid];
+6[label=is_egress_border_1, margin="", shape=ellipse, style=solid];
+7[label="hdr.mpls.setInvalid();\n...\nhdr.ipv4.ttl = hdr.ipv4.t...", margin="", shape=rectangle, style=solid];
+0 -> 2[label=""];
+2 -> 3[label=TRUE];
+2 -> 1[label=FALSE];
+3 -> 4[label=""];
+4 -> 5[label=""];
+4 -> 6[label=""];
+5 -> 1[label=""];
+6 -> 7[label=""];
+7 -> 1[label=""];
+}
+}

@@ -1,0 +1,1553 @@
+Calling target program-options parser
+Adding interface s1-eth1 as port 1
+[01:16:06.953] [bmv2] [D] [thread 52514] Adding interface s1-eth1 as port 1
+Adding interface s1-eth2 as port 2
+[01:16:06.976] [bmv2] [D] [thread 52514] Adding interface s1-eth2 as port 2
+Adding interface s1-eth3 as port 3
+[01:16:06.983] [bmv2] [D] [thread 52514] Adding interface s1-eth3 as port 3
+Adding interface s1-eth4 as port 4
+[01:16:07.000] [bmv2] [D] [thread 52514] Adding interface s1-eth4 as port 4
+Server listening on 0.0.0.0:9559
+[01:16:07.010] [bmv2] [I] [thread 52514] Starting Thrift server on port 9090
+[01:16:07.023] [bmv2] [I] [thread 52514] Thrift server was started
+[01:16:18.043] [bmv2] [D] [thread 53036] Set default default entry for table 'MyIngress.check_is_ingress_border': NoAction - 
+[01:16:18.043] [bmv2] [D] [thread 53036] Set default default entry for table 'MyIngress.fec_to_label': NoAction - 
+[01:16:18.043] [bmv2] [D] [thread 53036] Set default default entry for table 'MyIngress.mpls_tbl': MyIngress.drop - 
+[01:16:18.043] [bmv2] [D] [thread 53036] Set default default entry for table 'MyIngress.ipv4_ef': MyIngress.drop - 
+[01:16:18.043] [bmv2] [D] [thread 53036] Set default default entry for table 'MyIngress.ipv4_any': MyIngress.drop - 
+[01:16:18.044] [bmv2] [D] [thread 53036] Set default default entry for table 'MyEgress.check_is_egress_border': NoAction - 
+[01:16:18.045] [bmv2] [D] [thread 53036] simple_switch target has been notified of a config swap
+[01:16:18.074] [bmv2] [D] [thread 53052] [0.0] [cxt 0] Processing packet received on port 1
+[01:16:18.074] [bmv2] [D] [thread 53052] [0.0] [cxt 0] Parser 'parser': start
+[01:16:18.074] [bmv2] [D] [thread 53052] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.074] [bmv2] [D] [thread 53052] [0.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.074] [bmv2] [D] [thread 53052] [0.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.074] [bmv2] [T] [thread 53052] [0.0] [cxt 0] Bytes parsed: 14
+[01:16:18.074] [bmv2] [D] [thread 53052] [0.0] [cxt 0] Parser 'parser': end
+[01:16:18.074] [bmv2] [D] [thread 53052] [0.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.074] [bmv2] [T] [thread 53052] [0.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.074] [bmv2] [D] [thread 53052] [0.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.074] [bmv2] [D] [thread 53052] [0.0] [cxt 0] Egress port is 0
+[01:16:18.074] [bmv2] [D] [thread 53052] [1.0] [cxt 0] Processing packet received on port 2
+[01:16:18.074] [bmv2] [D] [thread 53052] [1.0] [cxt 0] Parser 'parser': start
+[01:16:18.074] [bmv2] [D] [thread 53052] [1.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.074] [bmv2] [D] [thread 53052] [1.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.074] [bmv2] [D] [thread 53052] [1.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.074] [bmv2] [T] [thread 53052] [1.0] [cxt 0] Bytes parsed: 14
+[01:16:18.074] [bmv2] [D] [thread 53052] [1.0] [cxt 0] Parser 'parser': end
+[01:16:18.074] [bmv2] [D] [thread 53052] [1.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.074] [bmv2] [T] [thread 53052] [1.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.074] [bmv2] [D] [thread 53052] [1.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.074] [bmv2] [D] [thread 53052] [1.0] [cxt 0] Egress port is 0
+[01:16:18.074] [bmv2] [D] [thread 53052] [2.0] [cxt 0] Processing packet received on port 3
+[01:16:18.074] [bmv2] [D] [thread 53052] [2.0] [cxt 0] Parser 'parser': start
+[01:16:18.074] [bmv2] [D] [thread 53052] [2.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.074] [bmv2] [D] [thread 53052] [2.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.075] [bmv2] [D] [thread 53052] [2.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.075] [bmv2] [T] [thread 53052] [2.0] [cxt 0] Bytes parsed: 14
+[01:16:18.075] [bmv2] [D] [thread 53052] [2.0] [cxt 0] Parser 'parser': end
+[01:16:18.075] [bmv2] [D] [thread 53052] [2.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.075] [bmv2] [T] [thread 53052] [2.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.075] [bmv2] [D] [thread 53052] [2.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.075] [bmv2] [D] [thread 53052] [2.0] [cxt 0] Egress port is 0
+[01:16:18.075] [bmv2] [D] [thread 53052] [3.0] [cxt 0] Processing packet received on port 4
+[01:16:18.075] [bmv2] [D] [thread 53052] [3.0] [cxt 0] Parser 'parser': start
+[01:16:18.075] [bmv2] [D] [thread 53052] [3.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.075] [bmv2] [D] [thread 53052] [3.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.075] [bmv2] [D] [thread 53052] [3.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.075] [bmv2] [T] [thread 53052] [3.0] [cxt 0] Bytes parsed: 14
+[01:16:18.075] [bmv2] [D] [thread 53052] [3.0] [cxt 0] Parser 'parser': end
+[01:16:18.075] [bmv2] [D] [thread 53052] [3.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.075] [bmv2] [T] [thread 53052] [3.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.075] [bmv2] [D] [thread 53052] [3.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.075] [bmv2] [D] [thread 53052] [3.0] [cxt 0] Egress port is 0
+[01:16:18.075] [bmv2] [D] [thread 53052] [4.0] [cxt 0] Processing packet received on port 1
+[01:16:18.075] [bmv2] [D] [thread 53052] [4.0] [cxt 0] Parser 'parser': start
+[01:16:18.075] [bmv2] [D] [thread 53052] [4.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.075] [bmv2] [D] [thread 53052] [4.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.075] [bmv2] [D] [thread 53052] [4.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.075] [bmv2] [T] [thread 53052] [4.0] [cxt 0] Bytes parsed: 14
+[01:16:18.075] [bmv2] [D] [thread 53052] [4.0] [cxt 0] Parser 'parser': end
+[01:16:18.075] [bmv2] [D] [thread 53052] [4.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.075] [bmv2] [T] [thread 53052] [4.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.075] [bmv2] [D] [thread 53052] [4.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.075] [bmv2] [D] [thread 53052] [4.0] [cxt 0] Egress port is 0
+[01:16:18.075] [bmv2] [D] [thread 53052] [5.0] [cxt 0] Processing packet received on port 2
+[01:16:18.075] [bmv2] [D] [thread 53052] [5.0] [cxt 0] Parser 'parser': start
+[01:16:18.075] [bmv2] [D] [thread 53052] [5.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.075] [bmv2] [D] [thread 53052] [5.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.075] [bmv2] [D] [thread 53052] [5.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.075] [bmv2] [T] [thread 53052] [5.0] [cxt 0] Bytes parsed: 14
+[01:16:18.075] [bmv2] [D] [thread 53052] [5.0] [cxt 0] Parser 'parser': end
+[01:16:18.075] [bmv2] [D] [thread 53052] [5.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.075] [bmv2] [T] [thread 53052] [5.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.075] [bmv2] [D] [thread 53052] [5.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.075] [bmv2] [D] [thread 53052] [5.0] [cxt 0] Egress port is 0
+[01:16:18.075] [bmv2] [D] [thread 53052] [6.0] [cxt 0] Processing packet received on port 3
+[01:16:18.075] [bmv2] [D] [thread 53052] [6.0] [cxt 0] Parser 'parser': start
+[01:16:18.075] [bmv2] [D] [thread 53052] [6.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.075] [bmv2] [D] [thread 53052] [6.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.075] [bmv2] [D] [thread 53052] [6.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.075] [bmv2] [T] [thread 53052] [6.0] [cxt 0] Bytes parsed: 14
+[01:16:18.075] [bmv2] [D] [thread 53052] [6.0] [cxt 0] Parser 'parser': end
+[01:16:18.075] [bmv2] [D] [thread 53052] [6.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.075] [bmv2] [T] [thread 53052] [6.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.075] [bmv2] [D] [thread 53052] [6.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.075] [bmv2] [D] [thread 53052] [6.0] [cxt 0] Egress port is 0
+[01:16:18.075] [bmv2] [D] [thread 53052] [7.0] [cxt 0] Processing packet received on port 4
+[01:16:18.075] [bmv2] [D] [thread 53052] [7.0] [cxt 0] Parser 'parser': start
+[01:16:18.075] [bmv2] [D] [thread 53052] [7.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.075] [bmv2] [D] [thread 53052] [7.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.075] [bmv2] [D] [thread 53052] [7.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.075] [bmv2] [T] [thread 53052] [7.0] [cxt 0] Bytes parsed: 14
+[01:16:18.075] [bmv2] [D] [thread 53052] [7.0] [cxt 0] Parser 'parser': end
+[01:16:18.075] [bmv2] [D] [thread 53052] [7.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.075] [bmv2] [T] [thread 53052] [7.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.075] [bmv2] [D] [thread 53052] [7.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.075] [bmv2] [D] [thread 53052] [7.0] [cxt 0] Egress port is 0
+[01:16:18.075] [bmv2] [D] [thread 53052] [8.0] [cxt 0] Processing packet received on port 1
+[01:16:18.075] [bmv2] [D] [thread 53052] [8.0] [cxt 0] Parser 'parser': start
+[01:16:18.075] [bmv2] [D] [thread 53052] [8.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.075] [bmv2] [D] [thread 53052] [8.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.075] [bmv2] [D] [thread 53052] [8.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.075] [bmv2] [T] [thread 53052] [8.0] [cxt 0] Bytes parsed: 14
+[01:16:18.075] [bmv2] [D] [thread 53052] [8.0] [cxt 0] Parser 'parser': end
+[01:16:18.075] [bmv2] [D] [thread 53052] [8.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.075] [bmv2] [T] [thread 53052] [8.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.075] [bmv2] [D] [thread 53052] [8.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.075] [bmv2] [D] [thread 53052] [8.0] [cxt 0] Egress port is 0
+[01:16:18.075] [bmv2] [D] [thread 53052] [9.0] [cxt 0] Processing packet received on port 2
+[01:16:18.075] [bmv2] [D] [thread 53052] [9.0] [cxt 0] Parser 'parser': start
+[01:16:18.075] [bmv2] [D] [thread 53052] [9.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.075] [bmv2] [D] [thread 53052] [9.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.075] [bmv2] [D] [thread 53052] [9.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.075] [bmv2] [T] [thread 53052] [9.0] [cxt 0] Bytes parsed: 14
+[01:16:18.075] [bmv2] [D] [thread 53052] [9.0] [cxt 0] Parser 'parser': end
+[01:16:18.075] [bmv2] [D] [thread 53052] [9.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.075] [bmv2] [T] [thread 53052] [9.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.075] [bmv2] [D] [thread 53052] [9.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.075] [bmv2] [D] [thread 53052] [9.0] [cxt 0] Egress port is 0
+[01:16:18.075] [bmv2] [D] [thread 53052] [10.0] [cxt 0] Processing packet received on port 3
+[01:16:18.075] [bmv2] [D] [thread 53052] [10.0] [cxt 0] Parser 'parser': start
+[01:16:18.075] [bmv2] [D] [thread 53052] [10.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.075] [bmv2] [D] [thread 53052] [10.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.075] [bmv2] [D] [thread 53052] [10.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.075] [bmv2] [T] [thread 53052] [10.0] [cxt 0] Bytes parsed: 14
+[01:16:18.075] [bmv2] [D] [thread 53052] [10.0] [cxt 0] Parser 'parser': end
+[01:16:18.079] [bmv2] [D] [thread 53053] [0.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.079] [bmv2] [T] [thread 53053] [0.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.079] [bmv2] [D] [thread 53053] [0.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.079] [bmv2] [D] [thread 53053] [0.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.079] [bmv2] [T] [thread 53053] [0.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.079] [bmv2] [D] [thread 53053] [0.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.079] [bmv2] [D] [thread 53053] [0.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.079] [bmv2] [D] [thread 53053] [1.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.079] [bmv2] [T] [thread 53053] [1.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.079] [bmv2] [D] [thread 53053] [1.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.079] [bmv2] [D] [thread 53053] [1.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.079] [bmv2] [T] [thread 53053] [1.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.079] [bmv2] [D] [thread 53053] [1.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.079] [bmv2] [D] [thread 53053] [1.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.079] [bmv2] [D] [thread 53053] [2.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.079] [bmv2] [T] [thread 53053] [2.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.079] [bmv2] [D] [thread 53053] [2.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.079] [bmv2] [D] [thread 53053] [2.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.079] [bmv2] [T] [thread 53053] [2.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.079] [bmv2] [D] [thread 53053] [2.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.079] [bmv2] [D] [thread 53053] [2.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.079] [bmv2] [D] [thread 53053] [3.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.079] [bmv2] [T] [thread 53053] [3.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.079] [bmv2] [D] [thread 53053] [3.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.079] [bmv2] [D] [thread 53053] [3.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.079] [bmv2] [T] [thread 53053] [3.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.079] [bmv2] [D] [thread 53053] [3.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.079] [bmv2] [D] [thread 53053] [3.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.079] [bmv2] [D] [thread 53053] [4.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.079] [bmv2] [T] [thread 53053] [4.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.079] [bmv2] [D] [thread 53053] [4.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.079] [bmv2] [D] [thread 53053] [4.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.079] [bmv2] [T] [thread 53053] [4.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.079] [bmv2] [D] [thread 53053] [4.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.079] [bmv2] [D] [thread 53053] [4.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.079] [bmv2] [D] [thread 53053] [5.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.079] [bmv2] [T] [thread 53053] [5.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.080] [bmv2] [D] [thread 53053] [5.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.080] [bmv2] [D] [thread 53053] [5.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.080] [bmv2] [T] [thread 53053] [5.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.080] [bmv2] [D] [thread 53053] [5.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.080] [bmv2] [D] [thread 53053] [5.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.080] [bmv2] [D] [thread 53053] [6.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.080] [bmv2] [T] [thread 53053] [6.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.080] [bmv2] [D] [thread 53053] [6.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.080] [bmv2] [D] [thread 53053] [6.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.080] [bmv2] [T] [thread 53053] [6.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.080] [bmv2] [D] [thread 53053] [6.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.080] [bmv2] [D] [thread 53053] [6.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.080] [bmv2] [D] [thread 53053] [7.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.080] [bmv2] [T] [thread 53053] [7.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.080] [bmv2] [D] [thread 53053] [7.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.080] [bmv2] [D] [thread 53053] [7.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.080] [bmv2] [T] [thread 53053] [7.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.080] [bmv2] [D] [thread 53053] [7.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.080] [bmv2] [D] [thread 53053] [7.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.080] [bmv2] [D] [thread 53053] [8.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.080] [bmv2] [T] [thread 53053] [8.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.080] [bmv2] [D] [thread 53053] [8.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.080] [bmv2] [D] [thread 53053] [8.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.080] [bmv2] [T] [thread 53053] [8.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.080] [bmv2] [D] [thread 53053] [8.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.080] [bmv2] [D] [thread 53053] [8.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.080] [bmv2] [D] [thread 53053] [9.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.080] [bmv2] [T] [thread 53053] [9.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.080] [bmv2] [D] [thread 53053] [9.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.080] [bmv2] [D] [thread 53053] [9.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.080] [bmv2] [T] [thread 53053] [9.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.080] [bmv2] [D] [thread 53053] [9.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.080] [bmv2] [D] [thread 53053] [9.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.080] [bmv2] [D] [thread 53057] [0.0] [cxt 0] Transmitting packet of size 210 out of port 0
+[01:16:18.080] [bmv2] [D] [thread 53057] [1.0] [cxt 0] Transmitting packet of size 210 out of port 0
+[01:16:18.080] [bmv2] [D] [thread 53057] [2.0] [cxt 0] Transmitting packet of size 210 out of port 0
+[01:16:18.080] [bmv2] [D] [thread 53057] [3.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[01:16:18.080] [bmv2] [D] [thread 53057] [4.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[01:16:18.080] [bmv2] [D] [thread 53057] [5.0] [cxt 0] Transmitting packet of size 210 out of port 0
+[01:16:18.080] [bmv2] [D] [thread 53057] [6.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[01:16:18.080] [bmv2] [D] [thread 53057] [7.0] [cxt 0] Transmitting packet of size 210 out of port 0
+[01:16:18.080] [bmv2] [D] [thread 53052] [10.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.080] [bmv2] [T] [thread 53052] [10.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.080] [bmv2] [D] [thread 53052] [10.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.080] [bmv2] [D] [thread 53052] [10.0] [cxt 0] Egress port is 0
+[01:16:18.080] [bmv2] [D] [thread 53052] [11.0] [cxt 0] Processing packet received on port 4
+[01:16:18.080] [bmv2] [D] [thread 53052] [11.0] [cxt 0] Parser 'parser': start
+[01:16:18.080] [bmv2] [D] [thread 53052] [11.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.080] [bmv2] [D] [thread 53052] [11.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.080] [bmv2] [D] [thread 53052] [11.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.080] [bmv2] [T] [thread 53052] [11.0] [cxt 0] Bytes parsed: 14
+[01:16:18.080] [bmv2] [D] [thread 53052] [11.0] [cxt 0] Parser 'parser': end
+[01:16:18.080] [bmv2] [D] [thread 53052] [11.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.080] [bmv2] [T] [thread 53052] [11.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.080] [bmv2] [D] [thread 53052] [11.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.080] [bmv2] [D] [thread 53052] [11.0] [cxt 0] Egress port is 0
+[01:16:18.080] [bmv2] [D] [thread 53052] [12.0] [cxt 0] Processing packet received on port 1
+[01:16:18.080] [bmv2] [D] [thread 53052] [12.0] [cxt 0] Parser 'parser': start
+[01:16:18.080] [bmv2] [D] [thread 53052] [12.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.080] [bmv2] [D] [thread 53052] [12.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.080] [bmv2] [D] [thread 53052] [12.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.080] [bmv2] [T] [thread 53052] [12.0] [cxt 0] Bytes parsed: 14
+[01:16:18.080] [bmv2] [D] [thread 53052] [12.0] [cxt 0] Parser 'parser': end
+[01:16:18.080] [bmv2] [D] [thread 53052] [12.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.080] [bmv2] [T] [thread 53052] [12.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.080] [bmv2] [D] [thread 53052] [12.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.080] [bmv2] [D] [thread 53052] [12.0] [cxt 0] Egress port is 0
+[01:16:18.080] [bmv2] [D] [thread 53052] [13.0] [cxt 0] Processing packet received on port 2
+[01:16:18.080] [bmv2] [D] [thread 53052] [13.0] [cxt 0] Parser 'parser': start
+[01:16:18.080] [bmv2] [D] [thread 53052] [13.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.080] [bmv2] [D] [thread 53052] [13.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.080] [bmv2] [D] [thread 53052] [13.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.080] [bmv2] [T] [thread 53052] [13.0] [cxt 0] Bytes parsed: 14
+[01:16:18.080] [bmv2] [D] [thread 53052] [13.0] [cxt 0] Parser 'parser': end
+[01:16:18.080] [bmv2] [D] [thread 53052] [13.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.080] [bmv2] [T] [thread 53052] [13.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.080] [bmv2] [D] [thread 53052] [13.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.080] [bmv2] [D] [thread 53052] [13.0] [cxt 0] Egress port is 0
+[01:16:18.080] [bmv2] [D] [thread 53052] [14.0] [cxt 0] Processing packet received on port 3
+[01:16:18.080] [bmv2] [D] [thread 53052] [14.0] [cxt 0] Parser 'parser': start
+[01:16:18.080] [bmv2] [D] [thread 53052] [14.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.080] [bmv2] [D] [thread 53052] [14.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.080] [bmv2] [D] [thread 53052] [14.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.080] [bmv2] [T] [thread 53052] [14.0] [cxt 0] Bytes parsed: 14
+[01:16:18.080] [bmv2] [D] [thread 53052] [14.0] [cxt 0] Parser 'parser': end
+[01:16:18.081] [bmv2] [D] [thread 53052] [14.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.081] [bmv2] [T] [thread 53052] [14.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.081] [bmv2] [D] [thread 53052] [14.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.081] [bmv2] [D] [thread 53052] [14.0] [cxt 0] Egress port is 0
+[01:16:18.081] [bmv2] [D] [thread 53052] [15.0] [cxt 0] Processing packet received on port 4
+[01:16:18.081] [bmv2] [D] [thread 53052] [15.0] [cxt 0] Parser 'parser': start
+[01:16:18.081] [bmv2] [D] [thread 53052] [15.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.081] [bmv2] [D] [thread 53052] [15.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.081] [bmv2] [D] [thread 53052] [15.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.081] [bmv2] [T] [thread 53052] [15.0] [cxt 0] Bytes parsed: 14
+[01:16:18.081] [bmv2] [D] [thread 53052] [15.0] [cxt 0] Parser 'parser': end
+[01:16:18.081] [bmv2] [D] [thread 53052] [15.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.081] [bmv2] [T] [thread 53052] [15.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.081] [bmv2] [D] [thread 53052] [15.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.081] [bmv2] [D] [thread 53052] [15.0] [cxt 0] Egress port is 0
+[01:16:18.081] [bmv2] [D] [thread 53052] [16.0] [cxt 0] Processing packet received on port 2
+[01:16:18.081] [bmv2] [D] [thread 53052] [16.0] [cxt 0] Parser 'parser': start
+[01:16:18.081] [bmv2] [D] [thread 53052] [16.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.081] [bmv2] [D] [thread 53052] [16.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.081] [bmv2] [D] [thread 53052] [16.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.081] [bmv2] [T] [thread 53052] [16.0] [cxt 0] Bytes parsed: 14
+[01:16:18.081] [bmv2] [D] [thread 53052] [16.0] [cxt 0] Parser 'parser': end
+[01:16:18.081] [bmv2] [D] [thread 53052] [16.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.081] [bmv2] [T] [thread 53052] [16.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.081] [bmv2] [D] [thread 53052] [16.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.081] [bmv2] [D] [thread 53052] [16.0] [cxt 0] Egress port is 0
+[01:16:18.081] [bmv2] [D] [thread 53052] [17.0] [cxt 0] Processing packet received on port 3
+[01:16:18.081] [bmv2] [D] [thread 53052] [17.0] [cxt 0] Parser 'parser': start
+[01:16:18.081] [bmv2] [D] [thread 53052] [17.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.081] [bmv2] [D] [thread 53052] [17.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.081] [bmv2] [D] [thread 53052] [17.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.081] [bmv2] [T] [thread 53052] [17.0] [cxt 0] Bytes parsed: 14
+[01:16:18.081] [bmv2] [D] [thread 53052] [17.0] [cxt 0] Parser 'parser': end
+[01:16:18.081] [bmv2] [D] [thread 53052] [17.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.081] [bmv2] [T] [thread 53052] [17.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.081] [bmv2] [D] [thread 53052] [17.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.081] [bmv2] [D] [thread 53052] [17.0] [cxt 0] Egress port is 0
+[01:16:18.081] [bmv2] [D] [thread 53052] [18.0] [cxt 0] Processing packet received on port 4
+[01:16:18.081] [bmv2] [D] [thread 53052] [18.0] [cxt 0] Parser 'parser': start
+[01:16:18.081] [bmv2] [D] [thread 53052] [18.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.081] [bmv2] [D] [thread 53052] [18.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.081] [bmv2] [D] [thread 53052] [18.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.081] [bmv2] [T] [thread 53052] [18.0] [cxt 0] Bytes parsed: 14
+[01:16:18.081] [bmv2] [D] [thread 53052] [18.0] [cxt 0] Parser 'parser': end
+[01:16:18.081] [bmv2] [D] [thread 53052] [18.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.081] [bmv2] [T] [thread 53052] [18.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.081] [bmv2] [D] [thread 53052] [18.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.081] [bmv2] [D] [thread 53052] [18.0] [cxt 0] Egress port is 0
+[01:16:18.081] [bmv2] [D] [thread 53052] [19.0] [cxt 0] Processing packet received on port 2
+[01:16:18.081] [bmv2] [D] [thread 53052] [19.0] [cxt 0] Parser 'parser': start
+[01:16:18.081] [bmv2] [D] [thread 53052] [19.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.081] [bmv2] [D] [thread 53052] [19.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.081] [bmv2] [D] [thread 53052] [19.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.081] [bmv2] [T] [thread 53052] [19.0] [cxt 0] Bytes parsed: 14
+[01:16:18.081] [bmv2] [D] [thread 53052] [19.0] [cxt 0] Parser 'parser': end
+[01:16:18.081] [bmv2] [D] [thread 53052] [19.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.081] [bmv2] [T] [thread 53052] [19.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.081] [bmv2] [D] [thread 53052] [19.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.081] [bmv2] [D] [thread 53052] [19.0] [cxt 0] Egress port is 0
+[01:16:18.081] [bmv2] [D] [thread 53052] [20.0] [cxt 0] Processing packet received on port 3
+[01:16:18.081] [bmv2] [D] [thread 53052] [20.0] [cxt 0] Parser 'parser': start
+[01:16:18.081] [bmv2] [D] [thread 53052] [20.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.081] [bmv2] [D] [thread 53052] [20.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.081] [bmv2] [D] [thread 53052] [20.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.081] [bmv2] [T] [thread 53052] [20.0] [cxt 0] Bytes parsed: 14
+[01:16:18.081] [bmv2] [D] [thread 53052] [20.0] [cxt 0] Parser 'parser': end
+[01:16:18.081] [bmv2] [D] [thread 53052] [20.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.081] [bmv2] [T] [thread 53052] [20.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.081] [bmv2] [D] [thread 53052] [20.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.081] [bmv2] [D] [thread 53052] [20.0] [cxt 0] Egress port is 0
+[01:16:18.095] [bmv2] [D] [thread 53053] [10.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.095] [bmv2] [T] [thread 53053] [10.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.095] [bmv2] [D] [thread 53053] [10.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.095] [bmv2] [D] [thread 53053] [10.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.095] [bmv2] [T] [thread 53053] [10.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.095] [bmv2] [D] [thread 53053] [10.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.095] [bmv2] [D] [thread 53053] [10.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.095] [bmv2] [D] [thread 53053] [11.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.095] [bmv2] [T] [thread 53053] [11.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.095] [bmv2] [D] [thread 53053] [11.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.095] [bmv2] [D] [thread 53053] [11.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.095] [bmv2] [T] [thread 53053] [11.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.095] [bmv2] [D] [thread 53053] [11.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.095] [bmv2] [D] [thread 53053] [11.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.095] [bmv2] [D] [thread 53053] [12.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.095] [bmv2] [T] [thread 53053] [12.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.095] [bmv2] [D] [thread 53053] [12.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.095] [bmv2] [D] [thread 53053] [12.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.095] [bmv2] [T] [thread 53053] [12.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.095] [bmv2] [D] [thread 53053] [12.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.095] [bmv2] [D] [thread 53053] [12.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.095] [bmv2] [D] [thread 53053] [13.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.095] [bmv2] [T] [thread 53053] [13.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.095] [bmv2] [D] [thread 53053] [13.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.095] [bmv2] [D] [thread 53053] [13.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.095] [bmv2] [T] [thread 53053] [13.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.095] [bmv2] [D] [thread 53053] [13.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.095] [bmv2] [D] [thread 53053] [13.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.095] [bmv2] [D] [thread 53053] [14.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.095] [bmv2] [T] [thread 53053] [14.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.095] [bmv2] [D] [thread 53053] [14.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.095] [bmv2] [D] [thread 53053] [14.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.095] [bmv2] [T] [thread 53053] [14.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.095] [bmv2] [D] [thread 53053] [14.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.095] [bmv2] [D] [thread 53053] [14.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.095] [bmv2] [D] [thread 53053] [15.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.095] [bmv2] [T] [thread 53053] [15.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.095] [bmv2] [D] [thread 53053] [15.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.096] [bmv2] [D] [thread 53053] [15.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.096] [bmv2] [T] [thread 53053] [15.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.096] [bmv2] [D] [thread 53053] [15.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.096] [bmv2] [D] [thread 53053] [15.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.096] [bmv2] [D] [thread 53053] [16.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.096] [bmv2] [T] [thread 53053] [16.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.096] [bmv2] [D] [thread 53053] [16.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.096] [bmv2] [D] [thread 53053] [16.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.096] [bmv2] [T] [thread 53053] [16.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.096] [bmv2] [D] [thread 53053] [16.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.096] [bmv2] [D] [thread 53053] [16.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.096] [bmv2] [D] [thread 53053] [17.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.096] [bmv2] [T] [thread 53053] [17.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.096] [bmv2] [D] [thread 53053] [17.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.096] [bmv2] [D] [thread 53053] [17.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.096] [bmv2] [T] [thread 53053] [17.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.096] [bmv2] [D] [thread 53053] [17.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.096] [bmv2] [D] [thread 53053] [17.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.096] [bmv2] [D] [thread 53053] [18.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.096] [bmv2] [T] [thread 53053] [18.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.096] [bmv2] [D] [thread 53053] [18.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.096] [bmv2] [D] [thread 53053] [18.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.096] [bmv2] [T] [thread 53053] [18.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.096] [bmv2] [D] [thread 53053] [18.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.096] [bmv2] [D] [thread 53053] [18.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.096] [bmv2] [D] [thread 53053] [19.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.096] [bmv2] [T] [thread 53053] [19.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.096] [bmv2] [D] [thread 53053] [19.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.096] [bmv2] [D] [thread 53053] [19.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.096] [bmv2] [T] [thread 53053] [19.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.096] [bmv2] [D] [thread 53053] [19.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.096] [bmv2] [D] [thread 53053] [19.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.096] [bmv2] [D] [thread 53053] [20.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.096] [bmv2] [T] [thread 53053] [20.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.096] [bmv2] [D] [thread 53053] [20.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.096] [bmv2] [D] [thread 53053] [20.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.096] [bmv2] [T] [thread 53053] [20.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.096] [bmv2] [D] [thread 53053] [20.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.096] [bmv2] [D] [thread 53053] [20.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.096] [bmv2] [D] [thread 53057] [8.0] [cxt 0] Transmitting packet of size 210 out of port 0
+[01:16:18.096] [bmv2] [D] [thread 53057] [9.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[01:16:18.096] [bmv2] [D] [thread 53057] [10.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[01:16:18.096] [bmv2] [D] [thread 53057] [11.0] [cxt 0] Transmitting packet of size 210 out of port 0
+[01:16:18.096] [bmv2] [D] [thread 53057] [12.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[01:16:18.096] [bmv2] [D] [thread 53057] [13.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[01:16:18.096] [bmv2] [D] [thread 53057] [14.0] [cxt 0] Transmitting packet of size 210 out of port 0
+[01:16:18.096] [bmv2] [D] [thread 53057] [15.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[01:16:18.096] [bmv2] [D] [thread 53057] [16.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[01:16:18.096] [bmv2] [D] [thread 53057] [17.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[01:16:18.096] [bmv2] [D] [thread 53057] [18.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[01:16:18.096] [bmv2] [D] [thread 53057] [19.0] [cxt 0] Transmitting packet of size 210 out of port 0
+[01:16:18.096] [bmv2] [D] [thread 53057] [20.0] [cxt 0] Transmitting packet of size 210 out of port 0
+[01:16:18.096] [bmv2] [D] [thread 53052] [21.0] [cxt 0] Processing packet received on port 4
+[01:16:18.096] [bmv2] [D] [thread 53052] [21.0] [cxt 0] Parser 'parser': start
+[01:16:18.096] [bmv2] [D] [thread 53052] [21.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.096] [bmv2] [D] [thread 53052] [21.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.096] [bmv2] [D] [thread 53052] [21.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.096] [bmv2] [T] [thread 53052] [21.0] [cxt 0] Bytes parsed: 14
+[01:16:18.096] [bmv2] [D] [thread 53052] [21.0] [cxt 0] Parser 'parser': end
+[01:16:18.096] [bmv2] [D] [thread 53052] [21.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.096] [bmv2] [T] [thread 53052] [21.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.096] [bmv2] [D] [thread 53052] [21.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.096] [bmv2] [D] [thread 53052] [21.0] [cxt 0] Egress port is 0
+[01:16:18.096] [bmv2] [D] [thread 53052] [22.0] [cxt 0] Processing packet received on port 2
+[01:16:18.096] [bmv2] [D] [thread 53052] [22.0] [cxt 0] Parser 'parser': start
+[01:16:18.096] [bmv2] [D] [thread 53052] [22.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.096] [bmv2] [D] [thread 53052] [22.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.096] [bmv2] [D] [thread 53052] [22.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.097] [bmv2] [T] [thread 53052] [22.0] [cxt 0] Bytes parsed: 14
+[01:16:18.097] [bmv2] [D] [thread 53052] [22.0] [cxt 0] Parser 'parser': end
+[01:16:18.097] [bmv2] [D] [thread 53052] [22.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.097] [bmv2] [T] [thread 53052] [22.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.097] [bmv2] [D] [thread 53052] [22.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.097] [bmv2] [D] [thread 53052] [22.0] [cxt 0] Egress port is 0
+[01:16:18.097] [bmv2] [D] [thread 53052] [23.0] [cxt 0] Processing packet received on port 3
+[01:16:18.097] [bmv2] [D] [thread 53052] [23.0] [cxt 0] Parser 'parser': start
+[01:16:18.097] [bmv2] [D] [thread 53052] [23.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.097] [bmv2] [D] [thread 53052] [23.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.097] [bmv2] [D] [thread 53052] [23.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.097] [bmv2] [T] [thread 53052] [23.0] [cxt 0] Bytes parsed: 14
+[01:16:18.097] [bmv2] [D] [thread 53052] [23.0] [cxt 0] Parser 'parser': end
+[01:16:18.097] [bmv2] [D] [thread 53052] [23.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.097] [bmv2] [T] [thread 53052] [23.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.097] [bmv2] [D] [thread 53052] [23.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.097] [bmv2] [D] [thread 53052] [23.0] [cxt 0] Egress port is 0
+[01:16:18.097] [bmv2] [D] [thread 53052] [24.0] [cxt 0] Processing packet received on port 4
+[01:16:18.097] [bmv2] [D] [thread 53052] [24.0] [cxt 0] Parser 'parser': start
+[01:16:18.097] [bmv2] [D] [thread 53052] [24.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.097] [bmv2] [D] [thread 53052] [24.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.097] [bmv2] [D] [thread 53052] [24.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.097] [bmv2] [T] [thread 53052] [24.0] [cxt 0] Bytes parsed: 14
+[01:16:18.097] [bmv2] [D] [thread 53052] [24.0] [cxt 0] Parser 'parser': end
+[01:16:18.097] [bmv2] [D] [thread 53052] [24.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.097] [bmv2] [T] [thread 53052] [24.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.097] [bmv2] [D] [thread 53052] [24.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.097] [bmv2] [D] [thread 53052] [24.0] [cxt 0] Egress port is 0
+[01:16:18.097] [bmv2] [D] [thread 53052] [25.0] [cxt 0] Processing packet received on port 2
+[01:16:18.097] [bmv2] [D] [thread 53052] [25.0] [cxt 0] Parser 'parser': start
+[01:16:18.097] [bmv2] [D] [thread 53052] [25.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.097] [bmv2] [D] [thread 53052] [25.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.097] [bmv2] [D] [thread 53052] [25.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.097] [bmv2] [T] [thread 53052] [25.0] [cxt 0] Bytes parsed: 14
+[01:16:18.097] [bmv2] [D] [thread 53052] [25.0] [cxt 0] Parser 'parser': end
+[01:16:18.097] [bmv2] [D] [thread 53052] [25.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.097] [bmv2] [T] [thread 53052] [25.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.097] [bmv2] [D] [thread 53052] [25.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.097] [bmv2] [D] [thread 53052] [25.0] [cxt 0] Egress port is 0
+[01:16:18.097] [bmv2] [D] [thread 53052] [26.0] [cxt 0] Processing packet received on port 4
+[01:16:18.097] [bmv2] [D] [thread 53052] [26.0] [cxt 0] Parser 'parser': start
+[01:16:18.097] [bmv2] [D] [thread 53052] [26.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.097] [bmv2] [D] [thread 53052] [26.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.097] [bmv2] [D] [thread 53052] [26.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.097] [bmv2] [T] [thread 53052] [26.0] [cxt 0] Bytes parsed: 14
+[01:16:18.097] [bmv2] [D] [thread 53052] [26.0] [cxt 0] Parser 'parser': end
+[01:16:18.097] [bmv2] [D] [thread 53052] [26.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.097] [bmv2] [T] [thread 53052] [26.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.097] [bmv2] [D] [thread 53052] [26.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.097] [bmv2] [D] [thread 53052] [26.0] [cxt 0] Egress port is 0
+[01:16:18.097] [bmv2] [D] [thread 53052] [27.0] [cxt 0] Processing packet received on port 4
+[01:16:18.097] [bmv2] [D] [thread 53052] [27.0] [cxt 0] Parser 'parser': start
+[01:16:18.097] [bmv2] [D] [thread 53052] [27.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:18.097] [bmv2] [D] [thread 53052] [27.0] [cxt 0] Extracting header 'ethernet'
+[01:16:18.097] [bmv2] [D] [thread 53052] [27.0] [cxt 0] Parser state 'start': key is 86dd
+[01:16:18.097] [bmv2] [T] [thread 53052] [27.0] [cxt 0] Bytes parsed: 14
+[01:16:18.097] [bmv2] [D] [thread 53052] [27.0] [cxt 0] Parser 'parser': end
+[01:16:18.097] [bmv2] [D] [thread 53052] [27.0] [cxt 0] Pipeline 'ingress': start
+[01:16:18.097] [bmv2] [T] [thread 53052] [27.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is false
+[01:16:18.097] [bmv2] [D] [thread 53052] [27.0] [cxt 0] Pipeline 'ingress': end
+[01:16:18.097] [bmv2] [D] [thread 53052] [27.0] [cxt 0] Egress port is 0
+[01:16:18.097] [bmv2] [D] [thread 53053] [21.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.097] [bmv2] [T] [thread 53053] [21.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.097] [bmv2] [D] [thread 53053] [21.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.097] [bmv2] [D] [thread 53053] [21.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.097] [bmv2] [T] [thread 53053] [21.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.097] [bmv2] [D] [thread 53053] [21.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.097] [bmv2] [D] [thread 53053] [21.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.097] [bmv2] [D] [thread 53057] [21.0] [cxt 0] Transmitting packet of size 210 out of port 0
+[01:16:18.097] [bmv2] [D] [thread 53053] [22.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.097] [bmv2] [T] [thread 53053] [22.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.097] [bmv2] [D] [thread 53053] [22.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.097] [bmv2] [D] [thread 53053] [22.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.097] [bmv2] [T] [thread 53053] [22.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.097] [bmv2] [D] [thread 53053] [22.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.097] [bmv2] [D] [thread 53053] [22.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.097] [bmv2] [D] [thread 53057] [22.0] [cxt 0] Transmitting packet of size 210 out of port 0
+[01:16:18.097] [bmv2] [D] [thread 53053] [23.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.097] [bmv2] [T] [thread 53053] [23.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.097] [bmv2] [D] [thread 53053] [23.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.097] [bmv2] [D] [thread 53053] [23.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.097] [bmv2] [T] [thread 53053] [23.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.097] [bmv2] [D] [thread 53053] [23.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.097] [bmv2] [D] [thread 53053] [23.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.097] [bmv2] [D] [thread 53057] [23.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[01:16:18.097] [bmv2] [D] [thread 53053] [24.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.097] [bmv2] [T] [thread 53053] [24.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.097] [bmv2] [D] [thread 53053] [24.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.097] [bmv2] [D] [thread 53053] [24.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.097] [bmv2] [T] [thread 53053] [24.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.097] [bmv2] [D] [thread 53053] [24.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.097] [bmv2] [D] [thread 53053] [24.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.097] [bmv2] [D] [thread 53057] [24.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[01:16:18.097] [bmv2] [D] [thread 53053] [25.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.097] [bmv2] [T] [thread 53053] [25.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.097] [bmv2] [D] [thread 53053] [25.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.097] [bmv2] [D] [thread 53053] [25.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.097] [bmv2] [T] [thread 53053] [25.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.097] [bmv2] [D] [thread 53053] [25.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.097] [bmv2] [D] [thread 53053] [25.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.097] [bmv2] [D] [thread 53057] [25.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[01:16:18.097] [bmv2] [D] [thread 53053] [26.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.097] [bmv2] [T] [thread 53053] [26.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.097] [bmv2] [D] [thread 53053] [26.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.098] [bmv2] [D] [thread 53053] [26.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.098] [bmv2] [T] [thread 53053] [26.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.098] [bmv2] [D] [thread 53053] [26.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.098] [bmv2] [D] [thread 53053] [26.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.098] [bmv2] [D] [thread 53057] [26.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[01:16:18.098] [bmv2] [D] [thread 53053] [27.0] [cxt 0] Pipeline 'egress': start
+[01:16:18.098] [bmv2] [T] [thread 53053] [27.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is false
+[01:16:18.098] [bmv2] [D] [thread 53053] [27.0] [cxt 0] Pipeline 'egress': end
+[01:16:18.098] [bmv2] [D] [thread 53053] [27.0] [cxt 0] Deparser 'deparser': start
+[01:16:18.098] [bmv2] [T] [thread 53053] [27.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[01:16:18.098] [bmv2] [D] [thread 53053] [27.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:18.098] [bmv2] [D] [thread 53053] [27.0] [cxt 0] Deparser 'deparser': end
+[01:16:18.098] [bmv2] [D] [thread 53057] [27.0] [cxt 0] Transmitting packet of size 210 out of port 0
+[01:16:18.698] [bmv2] [D] [thread 53045] Entry 0 added to table 'MyIngress.check_is_ingress_border'
+[01:16:18.698] [bmv2] [D] [thread 53045] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_is_ingress_border - 
+
+[01:16:18.711] [bmv2] [D] [thread 53045] Entry 0 added to table 'MyIngress.fec_to_label'
+[01:16:18.711] [bmv2] [D] [thread 53045] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a050202/32
+Action entry: MyIngress.add_mpls_header - 2,
+
+[01:16:18.722] [bmv2] [D] [thread 53059] Entry 1 added to table 'MyIngress.fec_to_label'
+[01:16:18.722] [bmv2] [D] [thread 53059] Dumping entry 1
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a060302/32
+Action entry: MyIngress.add_mpls_header - 3,
+
+[01:16:18.731] [bmv2] [D] [thread 53045] Entry 2 added to table 'MyIngress.fec_to_label'
+[01:16:18.731] [bmv2] [D] [thread 53045] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a0a0402/32
+Action entry: MyIngress.add_mpls_header - 4,
+
+[01:16:18.737] [bmv2] [D] [thread 53059] Entry 0 added to table 'MyIngress.mpls_tbl'
+[01:16:18.737] [bmv2] [D] [thread 53059] Dumping entry 0
+Match key:
+* hdr.mpls.label      : EXACT     000002
+Action entry: MyIngress.mpls_forward - 20100,2,
+
+[01:16:18.743] [bmv2] [D] [thread 53045] Entry 1 added to table 'MyIngress.mpls_tbl'
+[01:16:18.743] [bmv2] [D] [thread 53045] Dumping entry 1
+Match key:
+* hdr.mpls.label      : EXACT     000003
+Action entry: MyIngress.mpls_forward - 40100,4,
+
+[01:16:18.753] [bmv2] [D] [thread 53059] Entry 2 added to table 'MyIngress.mpls_tbl'
+[01:16:18.753] [bmv2] [D] [thread 53059] Dumping entry 2
+Match key:
+* hdr.mpls.label      : EXACT     000004
+Action entry: MyIngress.mpls_forward - 30100,3,
+
+[01:16:18.761] [bmv2] [D] [thread 53045] Entry 3 added to table 'MyIngress.mpls_tbl'
+[01:16:18.761] [bmv2] [D] [thread 53045] Dumping entry 3
+Match key:
+* hdr.mpls.label      : EXACT     000001
+Action entry: MyIngress.mpls_forward - a010102,1,
+
+[01:16:18.765] [bmv2] [D] [thread 53059] Entry 0 added to table 'MyEgress.check_is_egress_border'
+[01:16:18.765] [bmv2] [D] [thread 53059] Dumping entry 0
+Match key:
+* standard_metadata.egress_port: EXACT     0001
+Action entry: MyEgress.is_egress_border - 
+
+[01:16:18.770] [bmv2] [D] [thread 53045] Entry 0 added to table 'MyIngress.ipv4_any'
+[01:16:18.770] [bmv2] [D] [thread 53045] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a050202/32
+Action entry: MyIngress.ipv4_forward - 20100,2,
+
+[01:16:18.778] [bmv2] [D] [thread 53059] Entry 1 added to table 'MyIngress.ipv4_any'
+[01:16:18.778] [bmv2] [D] [thread 53059] Dumping entry 1
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a060302/32
+Action entry: MyIngress.ipv4_forward - 40100,4,
+
+[01:16:18.785] [bmv2] [D] [thread 53045] Entry 2 added to table 'MyIngress.ipv4_any'
+[01:16:18.785] [bmv2] [D] [thread 53045] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a0a0402/32
+Action entry: MyIngress.ipv4_forward - 30100,3,
+
+[01:16:18.796] [bmv2] [D] [thread 53059] Entry 3 added to table 'MyIngress.ipv4_any'
+[01:16:18.796] [bmv2] [D] [thread 53059] Dumping entry 3
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a010102/32
+Action entry: MyIngress.ipv4_forward - a010102,1,
+
+[01:16:18.802] [bmv2] [D] [thread 53045] Entry 0 added to table 'MyIngress.ipv4_ef'
+[01:16:18.802] [bmv2] [D] [thread 53045] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a050202/32
+Action entry: MyIngress.ipv4_forward - 30100,3,
+
+[01:16:18.823] [bmv2] [D] [thread 53059] Entry 1 added to table 'MyIngress.ipv4_ef'
+[01:16:18.823] [bmv2] [D] [thread 53059] Dumping entry 1
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a060302/32
+Action entry: MyIngress.ipv4_forward - 30100,3,
+
+[01:16:18.827] [bmv2] [D] [thread 53045] Entry 2 added to table 'MyIngress.ipv4_ef'
+[01:16:18.827] [bmv2] [D] [thread 53045] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a0a0402/32
+Action entry: MyIngress.ipv4_forward - 30100,3,
+
+[01:16:18.835] [bmv2] [D] [thread 53045] Entry 3 added to table 'MyIngress.ipv4_ef'
+[01:16:18.835] [bmv2] [D] [thread 53045] Dumping entry 3
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a010102/32
+Action entry: MyIngress.ipv4_forward - a010102,1,
+
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Processing packet received on port 1
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Parser 'parser': start
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Extracting header 'ethernet'
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Parser state 'start': key is 0800
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] Bytes parsed: 14
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Extracting header 'ipv4'
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] Bytes parsed: 34
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Parser 'parser': end
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Pipeline 'ingress': start
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is true
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] mejora.p4(203) Condition "hdr.ipv4.protocol == 1" (node_3) is true
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': hit with handle 0
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_is_ingress_border - 
+
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Action entry is MyIngress.set_is_ingress_border - 
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] Action MyIngress.set_is_ingress_border
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] mejora.p4(113) Primitive meta.is_ingress_border = (bit<1>)1
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] mejora.p4(207) Condition "meta.is_ingress_border == 1" (node_5) is true
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] Applying table 'MyIngress.fec_to_label'
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a050202
+
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Table 'MyIngress.fec_to_label': hit with handle 0
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a050202/32
+Action entry: MyIngress.add_mpls_header - 2,
+
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Action entry is MyIngress.add_mpls_header - 2,
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] Action MyIngress.add_mpls_header
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] mejora.p4(129) Primitive hdr.mpls.setValid()
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] mejora.p4(130) Primitive hdr.mpls.label = tag
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] mejora.p4(131) Primitive hdr.mpls.s = 0
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] mejora.p4(132) Primitive hdr.mpls.ttl = 255
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] mejora.p4(6) Primitive 0x8847; ...
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] mejora.p4(212) Condition "hdr.mpls.isValid()" (node_7) is true
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] Applying table 'MyIngress.mpls_tbl'
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Looking up key:
+* hdr.mpls.label      : 000002
+
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Table 'MyIngress.mpls_tbl': hit with handle 0
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.mpls.label      : EXACT     000002
+Action entry: MyIngress.mpls_forward - 20100,2,
+
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Action entry is MyIngress.mpls_forward - 20100,2,
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] Action MyIngress.mpls_forward
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] mejora.p4(149) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] mejora.p4(150) Primitive hdr.ethernet.dstAddr = dstAddr
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] mejora.p4(152) Primitive standard_metadata.egress_spec = port
+[01:16:25.052] [bmv2] [T] [thread 53052] [28.0] [cxt 0] mejora.p4(153) Primitive hdr.mpls.ttl = hdr.mpls.ttl - 1
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Pipeline 'ingress': end
+[01:16:25.052] [bmv2] [D] [thread 53052] [28.0] [cxt 0] Egress port is 2
+[01:16:25.052] [bmv2] [D] [thread 53055] [28.0] [cxt 0] Pipeline 'egress': start
+[01:16:25.052] [bmv2] [T] [thread 53055] [28.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is true
+[01:16:25.052] [bmv2] [T] [thread 53055] [28.0] [cxt 0] Applying table 'MyEgress.check_is_egress_border'
+[01:16:25.052] [bmv2] [D] [thread 53055] [28.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0002
+
+[01:16:25.052] [bmv2] [D] [thread 53055] [28.0] [cxt 0] Table 'MyEgress.check_is_egress_border': miss
+[01:16:25.052] [bmv2] [D] [thread 53055] [28.0] [cxt 0] Action entry is NoAction - 
+[01:16:25.052] [bmv2] [T] [thread 53055] [28.0] [cxt 0] Action NoAction
+[01:16:25.052] [bmv2] [D] [thread 53055] [28.0] [cxt 0] Pipeline 'egress': end
+[01:16:25.052] [bmv2] [D] [thread 53055] [28.0] [cxt 0] Deparser 'deparser': start
+[01:16:25.052] [bmv2] [D] [thread 53055] [28.0] [cxt 0] Updating checksum 'cksum'
+[01:16:25.052] [bmv2] [D] [thread 53055] [28.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:25.052] [bmv2] [D] [thread 53055] [28.0] [cxt 0] Deparsing header 'mpls'
+[01:16:25.052] [bmv2] [D] [thread 53055] [28.0] [cxt 0] Deparsing header 'ipv4'
+[01:16:25.052] [bmv2] [D] [thread 53055] [28.0] [cxt 0] Deparser 'deparser': end
+[01:16:25.052] [bmv2] [D] [thread 53057] [28.0] [cxt 0] Transmitting packet of size 102 out of port 2
+[01:16:25.057] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Processing packet received on port 3
+[01:16:25.057] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Parser 'parser': start
+[01:16:25.057] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:25.057] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Extracting header 'ethernet'
+[01:16:25.057] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Parser state 'start': key is 8847
+[01:16:25.057] [bmv2] [T] [thread 53052] [29.0] [cxt 0] Bytes parsed: 14
+[01:16:25.057] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Parser 'parser' entering state 'parse_mpls'
+[01:16:25.057] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Extracting header 'mpls'
+[01:16:25.057] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Parser state 'parse_mpls' has no switch, going to default next state
+[01:16:25.057] [bmv2] [T] [thread 53052] [29.0] [cxt 0] Bytes parsed: 18
+[01:16:25.057] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[01:16:25.057] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Extracting header 'ipv4'
+[01:16:25.057] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[01:16:25.057] [bmv2] [T] [thread 53052] [29.0] [cxt 0] Bytes parsed: 38
+[01:16:25.057] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Parser 'parser': end
+[01:16:25.057] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Pipeline 'ingress': start
+[01:16:25.057] [bmv2] [T] [thread 53052] [29.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is true
+[01:16:25.057] [bmv2] [T] [thread 53052] [29.0] [cxt 0] mejora.p4(203) Condition "hdr.ipv4.protocol == 1" (node_3) is true
+[01:16:25.057] [bmv2] [T] [thread 53052] [29.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[01:16:25.057] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0003
+
+[01:16:25.058] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
+[01:16:25.058] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Action entry is NoAction - 
+[01:16:25.058] [bmv2] [T] [thread 53052] [29.0] [cxt 0] Action NoAction
+[01:16:25.058] [bmv2] [T] [thread 53052] [29.0] [cxt 0] mejora.p4(207) Condition "meta.is_ingress_border == 1" (node_5) is false
+[01:16:25.058] [bmv2] [T] [thread 53052] [29.0] [cxt 0] mejora.p4(212) Condition "hdr.mpls.isValid()" (node_7) is true
+[01:16:25.058] [bmv2] [T] [thread 53052] [29.0] [cxt 0] Applying table 'MyIngress.mpls_tbl'
+[01:16:25.058] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Looking up key:
+* hdr.mpls.label      : 000001
+
+[01:16:25.058] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Table 'MyIngress.mpls_tbl': hit with handle 3
+[01:16:25.058] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Dumping entry 3
+Match key:
+* hdr.mpls.label      : EXACT     000001
+Action entry: MyIngress.mpls_forward - a010102,1,
+
+[01:16:25.058] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Action entry is MyIngress.mpls_forward - a010102,1,
+[01:16:25.058] [bmv2] [T] [thread 53052] [29.0] [cxt 0] Action MyIngress.mpls_forward
+[01:16:25.058] [bmv2] [T] [thread 53052] [29.0] [cxt 0] mejora.p4(149) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[01:16:25.058] [bmv2] [T] [thread 53052] [29.0] [cxt 0] mejora.p4(150) Primitive hdr.ethernet.dstAddr = dstAddr
+[01:16:25.058] [bmv2] [T] [thread 53052] [29.0] [cxt 0] mejora.p4(152) Primitive standard_metadata.egress_spec = port
+[01:16:25.058] [bmv2] [T] [thread 53052] [29.0] [cxt 0] mejora.p4(153) Primitive hdr.mpls.ttl = hdr.mpls.ttl - 1
+[01:16:25.058] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Pipeline 'ingress': end
+[01:16:25.058] [bmv2] [D] [thread 53052] [29.0] [cxt 0] Egress port is 1
+[01:16:25.058] [bmv2] [D] [thread 53054] [29.0] [cxt 0] Pipeline 'egress': start
+[01:16:25.058] [bmv2] [T] [thread 53054] [29.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is true
+[01:16:25.058] [bmv2] [T] [thread 53054] [29.0] [cxt 0] Applying table 'MyEgress.check_is_egress_border'
+[01:16:25.058] [bmv2] [D] [thread 53054] [29.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0001
+
+[01:16:25.058] [bmv2] [D] [thread 53054] [29.0] [cxt 0] Table 'MyEgress.check_is_egress_border': hit with handle 0
+[01:16:25.058] [bmv2] [D] [thread 53054] [29.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.egress_port: EXACT     0001
+Action entry: MyEgress.is_egress_border - 
+
+[01:16:25.058] [bmv2] [D] [thread 53054] [29.0] [cxt 0] Action entry is MyEgress.is_egress_border - 
+[01:16:25.058] [bmv2] [T] [thread 53054] [29.0] [cxt 0] Action MyEgress.is_egress_border
+[01:16:25.058] [bmv2] [T] [thread 53054] [29.0] [cxt 0] mejora.p4(236) Primitive hdr.mpls.setInvalid()
+[01:16:25.058] [bmv2] [T] [thread 53054] [29.0] [cxt 0] mejora.p4(5) Primitive 0x800; ...
+[01:16:25.058] [bmv2] [T] [thread 53054] [29.0] [cxt 0] mejora.p4(238) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[01:16:25.058] [bmv2] [D] [thread 53054] [29.0] [cxt 0] Pipeline 'egress': end
+[01:16:25.058] [bmv2] [D] [thread 53054] [29.0] [cxt 0] Deparser 'deparser': start
+[01:16:25.058] [bmv2] [D] [thread 53054] [29.0] [cxt 0] Updating checksum 'cksum'
+[01:16:25.058] [bmv2] [D] [thread 53054] [29.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:25.058] [bmv2] [D] [thread 53054] [29.0] [cxt 0] Deparsing header 'ipv4'
+[01:16:25.058] [bmv2] [D] [thread 53054] [29.0] [cxt 0] Deparser 'deparser': end
+[01:16:25.058] [bmv2] [D] [thread 53057] [29.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[01:16:25.067] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Processing packet received on port 1
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Parser 'parser': start
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Extracting header 'ethernet'
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Parser state 'start': key is 0800
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] Bytes parsed: 14
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Extracting header 'ipv4'
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] Bytes parsed: 34
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Parser 'parser': end
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Pipeline 'ingress': start
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is true
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] mejora.p4(203) Condition "hdr.ipv4.protocol == 1" (node_3) is true
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': hit with handle 0
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_is_ingress_border - 
+
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Action entry is MyIngress.set_is_ingress_border - 
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] Action MyIngress.set_is_ingress_border
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] mejora.p4(113) Primitive meta.is_ingress_border = (bit<1>)1
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] mejora.p4(207) Condition "meta.is_ingress_border == 1" (node_5) is true
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] Applying table 'MyIngress.fec_to_label'
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a060302
+
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Table 'MyIngress.fec_to_label': hit with handle 1
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Dumping entry 1
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a060302/32
+Action entry: MyIngress.add_mpls_header - 3,
+
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Action entry is MyIngress.add_mpls_header - 3,
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] Action MyIngress.add_mpls_header
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] mejora.p4(129) Primitive hdr.mpls.setValid()
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] mejora.p4(130) Primitive hdr.mpls.label = tag
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] mejora.p4(131) Primitive hdr.mpls.s = 0
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] mejora.p4(132) Primitive hdr.mpls.ttl = 255
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] mejora.p4(6) Primitive 0x8847; ...
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] mejora.p4(212) Condition "hdr.mpls.isValid()" (node_7) is true
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] Applying table 'MyIngress.mpls_tbl'
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Looking up key:
+* hdr.mpls.label      : 000003
+
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Table 'MyIngress.mpls_tbl': hit with handle 1
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Dumping entry 1
+Match key:
+* hdr.mpls.label      : EXACT     000003
+Action entry: MyIngress.mpls_forward - 40100,4,
+
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Action entry is MyIngress.mpls_forward - 40100,4,
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] Action MyIngress.mpls_forward
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] mejora.p4(149) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] mejora.p4(150) Primitive hdr.ethernet.dstAddr = dstAddr
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] mejora.p4(152) Primitive standard_metadata.egress_spec = port
+[01:16:25.068] [bmv2] [T] [thread 53052] [30.0] [cxt 0] mejora.p4(153) Primitive hdr.mpls.ttl = hdr.mpls.ttl - 1
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Pipeline 'ingress': end
+[01:16:25.068] [bmv2] [D] [thread 53052] [30.0] [cxt 0] Egress port is 4
+[01:16:25.068] [bmv2] [D] [thread 53053] [30.0] [cxt 0] Pipeline 'egress': start
+[01:16:25.068] [bmv2] [T] [thread 53053] [30.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is true
+[01:16:25.068] [bmv2] [T] [thread 53053] [30.0] [cxt 0] Applying table 'MyEgress.check_is_egress_border'
+[01:16:25.068] [bmv2] [D] [thread 53053] [30.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0004
+
+[01:16:25.068] [bmv2] [D] [thread 53053] [30.0] [cxt 0] Table 'MyEgress.check_is_egress_border': miss
+[01:16:25.068] [bmv2] [D] [thread 53053] [30.0] [cxt 0] Action entry is NoAction - 
+[01:16:25.068] [bmv2] [T] [thread 53053] [30.0] [cxt 0] Action NoAction
+[01:16:25.068] [bmv2] [D] [thread 53053] [30.0] [cxt 0] Pipeline 'egress': end
+[01:16:25.068] [bmv2] [D] [thread 53053] [30.0] [cxt 0] Deparser 'deparser': start
+[01:16:25.068] [bmv2] [D] [thread 53053] [30.0] [cxt 0] Updating checksum 'cksum'
+[01:16:25.068] [bmv2] [D] [thread 53053] [30.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:25.068] [bmv2] [D] [thread 53053] [30.0] [cxt 0] Deparsing header 'mpls'
+[01:16:25.068] [bmv2] [D] [thread 53053] [30.0] [cxt 0] Deparsing header 'ipv4'
+[01:16:25.068] [bmv2] [D] [thread 53053] [30.0] [cxt 0] Deparser 'deparser': end
+[01:16:25.068] [bmv2] [D] [thread 53057] [30.0] [cxt 0] Transmitting packet of size 102 out of port 4
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Processing packet received on port 3
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Parser 'parser': start
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Extracting header 'ethernet'
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Parser state 'start': key is 8847
+[01:16:25.073] [bmv2] [T] [thread 53052] [31.0] [cxt 0] Bytes parsed: 14
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Parser 'parser' entering state 'parse_mpls'
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Extracting header 'mpls'
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Parser state 'parse_mpls' has no switch, going to default next state
+[01:16:25.073] [bmv2] [T] [thread 53052] [31.0] [cxt 0] Bytes parsed: 18
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Extracting header 'ipv4'
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[01:16:25.073] [bmv2] [T] [thread 53052] [31.0] [cxt 0] Bytes parsed: 38
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Parser 'parser': end
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Pipeline 'ingress': start
+[01:16:25.073] [bmv2] [T] [thread 53052] [31.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is true
+[01:16:25.073] [bmv2] [T] [thread 53052] [31.0] [cxt 0] mejora.p4(203) Condition "hdr.ipv4.protocol == 1" (node_3) is true
+[01:16:25.073] [bmv2] [T] [thread 53052] [31.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0003
+
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Action entry is NoAction - 
+[01:16:25.073] [bmv2] [T] [thread 53052] [31.0] [cxt 0] Action NoAction
+[01:16:25.073] [bmv2] [T] [thread 53052] [31.0] [cxt 0] mejora.p4(207) Condition "meta.is_ingress_border == 1" (node_5) is false
+[01:16:25.073] [bmv2] [T] [thread 53052] [31.0] [cxt 0] mejora.p4(212) Condition "hdr.mpls.isValid()" (node_7) is true
+[01:16:25.073] [bmv2] [T] [thread 53052] [31.0] [cxt 0] Applying table 'MyIngress.mpls_tbl'
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Looking up key:
+* hdr.mpls.label      : 000001
+
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Table 'MyIngress.mpls_tbl': hit with handle 3
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Dumping entry 3
+Match key:
+* hdr.mpls.label      : EXACT     000001
+Action entry: MyIngress.mpls_forward - a010102,1,
+
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Action entry is MyIngress.mpls_forward - a010102,1,
+[01:16:25.073] [bmv2] [T] [thread 53052] [31.0] [cxt 0] Action MyIngress.mpls_forward
+[01:16:25.073] [bmv2] [T] [thread 53052] [31.0] [cxt 0] mejora.p4(149) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[01:16:25.073] [bmv2] [T] [thread 53052] [31.0] [cxt 0] mejora.p4(150) Primitive hdr.ethernet.dstAddr = dstAddr
+[01:16:25.073] [bmv2] [T] [thread 53052] [31.0] [cxt 0] mejora.p4(152) Primitive standard_metadata.egress_spec = port
+[01:16:25.073] [bmv2] [T] [thread 53052] [31.0] [cxt 0] mejora.p4(153) Primitive hdr.mpls.ttl = hdr.mpls.ttl - 1
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Pipeline 'ingress': end
+[01:16:25.073] [bmv2] [D] [thread 53052] [31.0] [cxt 0] Egress port is 1
+[01:16:25.073] [bmv2] [D] [thread 53054] [31.0] [cxt 0] Pipeline 'egress': start
+[01:16:25.073] [bmv2] [T] [thread 53054] [31.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is true
+[01:16:25.073] [bmv2] [T] [thread 53054] [31.0] [cxt 0] Applying table 'MyEgress.check_is_egress_border'
+[01:16:25.073] [bmv2] [D] [thread 53054] [31.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0001
+
+[01:16:25.073] [bmv2] [D] [thread 53054] [31.0] [cxt 0] Table 'MyEgress.check_is_egress_border': hit with handle 0
+[01:16:25.073] [bmv2] [D] [thread 53054] [31.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.egress_port: EXACT     0001
+Action entry: MyEgress.is_egress_border - 
+
+[01:16:25.073] [bmv2] [D] [thread 53054] [31.0] [cxt 0] Action entry is MyEgress.is_egress_border - 
+[01:16:25.073] [bmv2] [T] [thread 53054] [31.0] [cxt 0] Action MyEgress.is_egress_border
+[01:16:25.073] [bmv2] [T] [thread 53054] [31.0] [cxt 0] mejora.p4(236) Primitive hdr.mpls.setInvalid()
+[01:16:25.073] [bmv2] [T] [thread 53054] [31.0] [cxt 0] mejora.p4(5) Primitive 0x800; ...
+[01:16:25.073] [bmv2] [T] [thread 53054] [31.0] [cxt 0] mejora.p4(238) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[01:16:25.073] [bmv2] [D] [thread 53054] [31.0] [cxt 0] Pipeline 'egress': end
+[01:16:25.073] [bmv2] [D] [thread 53054] [31.0] [cxt 0] Deparser 'deparser': start
+[01:16:25.073] [bmv2] [D] [thread 53054] [31.0] [cxt 0] Updating checksum 'cksum'
+[01:16:25.073] [bmv2] [D] [thread 53054] [31.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:25.073] [bmv2] [D] [thread 53054] [31.0] [cxt 0] Deparsing header 'ipv4'
+[01:16:25.073] [bmv2] [D] [thread 53054] [31.0] [cxt 0] Deparser 'deparser': end
+[01:16:25.073] [bmv2] [D] [thread 53057] [31.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Processing packet received on port 1
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Parser 'parser': start
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Extracting header 'ethernet'
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Parser state 'start': key is 0800
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] Bytes parsed: 14
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Extracting header 'ipv4'
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] Bytes parsed: 34
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Parser 'parser': end
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Pipeline 'ingress': start
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is true
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] mejora.p4(203) Condition "hdr.ipv4.protocol == 1" (node_3) is true
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': hit with handle 0
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_is_ingress_border - 
+
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Action entry is MyIngress.set_is_ingress_border - 
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] Action MyIngress.set_is_ingress_border
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] mejora.p4(113) Primitive meta.is_ingress_border = (bit<1>)1
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] mejora.p4(207) Condition "meta.is_ingress_border == 1" (node_5) is true
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] Applying table 'MyIngress.fec_to_label'
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a0a0402
+
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Table 'MyIngress.fec_to_label': hit with handle 2
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a0a0402/32
+Action entry: MyIngress.add_mpls_header - 4,
+
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Action entry is MyIngress.add_mpls_header - 4,
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] Action MyIngress.add_mpls_header
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] mejora.p4(129) Primitive hdr.mpls.setValid()
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] mejora.p4(130) Primitive hdr.mpls.label = tag
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] mejora.p4(131) Primitive hdr.mpls.s = 0
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] mejora.p4(132) Primitive hdr.mpls.ttl = 255
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] mejora.p4(6) Primitive 0x8847; ...
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] mejora.p4(212) Condition "hdr.mpls.isValid()" (node_7) is true
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] Applying table 'MyIngress.mpls_tbl'
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Looking up key:
+* hdr.mpls.label      : 000004
+
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Table 'MyIngress.mpls_tbl': hit with handle 2
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Dumping entry 2
+Match key:
+* hdr.mpls.label      : EXACT     000004
+Action entry: MyIngress.mpls_forward - 30100,3,
+
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Action entry is MyIngress.mpls_forward - 30100,3,
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] Action MyIngress.mpls_forward
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] mejora.p4(149) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] mejora.p4(150) Primitive hdr.ethernet.dstAddr = dstAddr
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] mejora.p4(152) Primitive standard_metadata.egress_spec = port
+[01:16:25.088] [bmv2] [T] [thread 53052] [32.0] [cxt 0] mejora.p4(153) Primitive hdr.mpls.ttl = hdr.mpls.ttl - 1
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Pipeline 'ingress': end
+[01:16:25.088] [bmv2] [D] [thread 53052] [32.0] [cxt 0] Egress port is 3
+[01:16:25.088] [bmv2] [D] [thread 53056] [32.0] [cxt 0] Pipeline 'egress': start
+[01:16:25.088] [bmv2] [T] [thread 53056] [32.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is true
+[01:16:25.088] [bmv2] [T] [thread 53056] [32.0] [cxt 0] Applying table 'MyEgress.check_is_egress_border'
+[01:16:25.088] [bmv2] [D] [thread 53056] [32.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0003
+
+[01:16:25.088] [bmv2] [D] [thread 53056] [32.0] [cxt 0] Table 'MyEgress.check_is_egress_border': miss
+[01:16:25.088] [bmv2] [D] [thread 53056] [32.0] [cxt 0] Action entry is NoAction - 
+[01:16:25.088] [bmv2] [T] [thread 53056] [32.0] [cxt 0] Action NoAction
+[01:16:25.088] [bmv2] [D] [thread 53056] [32.0] [cxt 0] Pipeline 'egress': end
+[01:16:25.088] [bmv2] [D] [thread 53056] [32.0] [cxt 0] Deparser 'deparser': start
+[01:16:25.088] [bmv2] [D] [thread 53056] [32.0] [cxt 0] Updating checksum 'cksum'
+[01:16:25.088] [bmv2] [D] [thread 53056] [32.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:25.088] [bmv2] [D] [thread 53056] [32.0] [cxt 0] Deparsing header 'mpls'
+[01:16:25.088] [bmv2] [D] [thread 53056] [32.0] [cxt 0] Deparsing header 'ipv4'
+[01:16:25.088] [bmv2] [D] [thread 53056] [32.0] [cxt 0] Deparser 'deparser': end
+[01:16:25.088] [bmv2] [D] [thread 53057] [32.0] [cxt 0] Transmitting packet of size 102 out of port 3
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Processing packet received on port 3
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Parser 'parser': start
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Extracting header 'ethernet'
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Parser state 'start': key is 8847
+[01:16:25.095] [bmv2] [T] [thread 53052] [33.0] [cxt 0] Bytes parsed: 14
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Parser 'parser' entering state 'parse_mpls'
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Extracting header 'mpls'
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Parser state 'parse_mpls' has no switch, going to default next state
+[01:16:25.095] [bmv2] [T] [thread 53052] [33.0] [cxt 0] Bytes parsed: 18
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Extracting header 'ipv4'
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[01:16:25.095] [bmv2] [T] [thread 53052] [33.0] [cxt 0] Bytes parsed: 38
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Parser 'parser': end
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Pipeline 'ingress': start
+[01:16:25.095] [bmv2] [T] [thread 53052] [33.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is true
+[01:16:25.095] [bmv2] [T] [thread 53052] [33.0] [cxt 0] mejora.p4(203) Condition "hdr.ipv4.protocol == 1" (node_3) is true
+[01:16:25.095] [bmv2] [T] [thread 53052] [33.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0003
+
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Action entry is NoAction - 
+[01:16:25.095] [bmv2] [T] [thread 53052] [33.0] [cxt 0] Action NoAction
+[01:16:25.095] [bmv2] [T] [thread 53052] [33.0] [cxt 0] mejora.p4(207) Condition "meta.is_ingress_border == 1" (node_5) is false
+[01:16:25.095] [bmv2] [T] [thread 53052] [33.0] [cxt 0] mejora.p4(212) Condition "hdr.mpls.isValid()" (node_7) is true
+[01:16:25.095] [bmv2] [T] [thread 53052] [33.0] [cxt 0] Applying table 'MyIngress.mpls_tbl'
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Looking up key:
+* hdr.mpls.label      : 000001
+
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Table 'MyIngress.mpls_tbl': hit with handle 3
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Dumping entry 3
+Match key:
+* hdr.mpls.label      : EXACT     000001
+Action entry: MyIngress.mpls_forward - a010102,1,
+
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Action entry is MyIngress.mpls_forward - a010102,1,
+[01:16:25.095] [bmv2] [T] [thread 53052] [33.0] [cxt 0] Action MyIngress.mpls_forward
+[01:16:25.095] [bmv2] [T] [thread 53052] [33.0] [cxt 0] mejora.p4(149) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[01:16:25.095] [bmv2] [T] [thread 53052] [33.0] [cxt 0] mejora.p4(150) Primitive hdr.ethernet.dstAddr = dstAddr
+[01:16:25.095] [bmv2] [T] [thread 53052] [33.0] [cxt 0] mejora.p4(152) Primitive standard_metadata.egress_spec = port
+[01:16:25.095] [bmv2] [T] [thread 53052] [33.0] [cxt 0] mejora.p4(153) Primitive hdr.mpls.ttl = hdr.mpls.ttl - 1
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Pipeline 'ingress': end
+[01:16:25.095] [bmv2] [D] [thread 53052] [33.0] [cxt 0] Egress port is 1
+[01:16:25.095] [bmv2] [D] [thread 53054] [33.0] [cxt 0] Pipeline 'egress': start
+[01:16:25.095] [bmv2] [T] [thread 53054] [33.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is true
+[01:16:25.095] [bmv2] [T] [thread 53054] [33.0] [cxt 0] Applying table 'MyEgress.check_is_egress_border'
+[01:16:25.095] [bmv2] [D] [thread 53054] [33.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0001
+
+[01:16:25.095] [bmv2] [D] [thread 53054] [33.0] [cxt 0] Table 'MyEgress.check_is_egress_border': hit with handle 0
+[01:16:25.095] [bmv2] [D] [thread 53054] [33.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.egress_port: EXACT     0001
+Action entry: MyEgress.is_egress_border - 
+
+[01:16:25.095] [bmv2] [D] [thread 53054] [33.0] [cxt 0] Action entry is MyEgress.is_egress_border - 
+[01:16:25.095] [bmv2] [T] [thread 53054] [33.0] [cxt 0] Action MyEgress.is_egress_border
+[01:16:25.095] [bmv2] [T] [thread 53054] [33.0] [cxt 0] mejora.p4(236) Primitive hdr.mpls.setInvalid()
+[01:16:25.095] [bmv2] [T] [thread 53054] [33.0] [cxt 0] mejora.p4(5) Primitive 0x800; ...
+[01:16:25.095] [bmv2] [T] [thread 53054] [33.0] [cxt 0] mejora.p4(238) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[01:16:25.095] [bmv2] [D] [thread 53054] [33.0] [cxt 0] Pipeline 'egress': end
+[01:16:25.095] [bmv2] [D] [thread 53054] [33.0] [cxt 0] Deparser 'deparser': start
+[01:16:25.095] [bmv2] [D] [thread 53054] [33.0] [cxt 0] Updating checksum 'cksum'
+[01:16:25.095] [bmv2] [D] [thread 53054] [33.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:25.095] [bmv2] [D] [thread 53054] [33.0] [cxt 0] Deparsing header 'ipv4'
+[01:16:25.095] [bmv2] [D] [thread 53054] [33.0] [cxt 0] Deparser 'deparser': end
+[01:16:25.095] [bmv2] [D] [thread 53057] [33.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Processing packet received on port 3
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Parser 'parser': start
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Extracting header 'ethernet'
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Parser state 'start': key is 8847
+[01:16:25.102] [bmv2] [T] [thread 53052] [34.0] [cxt 0] Bytes parsed: 14
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Parser 'parser' entering state 'parse_mpls'
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Extracting header 'mpls'
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Parser state 'parse_mpls' has no switch, going to default next state
+[01:16:25.102] [bmv2] [T] [thread 53052] [34.0] [cxt 0] Bytes parsed: 18
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Extracting header 'ipv4'
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[01:16:25.102] [bmv2] [T] [thread 53052] [34.0] [cxt 0] Bytes parsed: 38
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Parser 'parser': end
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Pipeline 'ingress': start
+[01:16:25.102] [bmv2] [T] [thread 53052] [34.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is true
+[01:16:25.102] [bmv2] [T] [thread 53052] [34.0] [cxt 0] mejora.p4(203) Condition "hdr.ipv4.protocol == 1" (node_3) is true
+[01:16:25.102] [bmv2] [T] [thread 53052] [34.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0003
+
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Action entry is NoAction - 
+[01:16:25.102] [bmv2] [T] [thread 53052] [34.0] [cxt 0] Action NoAction
+[01:16:25.102] [bmv2] [T] [thread 53052] [34.0] [cxt 0] mejora.p4(207) Condition "meta.is_ingress_border == 1" (node_5) is false
+[01:16:25.102] [bmv2] [T] [thread 53052] [34.0] [cxt 0] mejora.p4(212) Condition "hdr.mpls.isValid()" (node_7) is true
+[01:16:25.102] [bmv2] [T] [thread 53052] [34.0] [cxt 0] Applying table 'MyIngress.mpls_tbl'
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Looking up key:
+* hdr.mpls.label      : 000001
+
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Table 'MyIngress.mpls_tbl': hit with handle 3
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Dumping entry 3
+Match key:
+* hdr.mpls.label      : EXACT     000001
+Action entry: MyIngress.mpls_forward - a010102,1,
+
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Action entry is MyIngress.mpls_forward - a010102,1,
+[01:16:25.102] [bmv2] [T] [thread 53052] [34.0] [cxt 0] Action MyIngress.mpls_forward
+[01:16:25.102] [bmv2] [T] [thread 53052] [34.0] [cxt 0] mejora.p4(149) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[01:16:25.102] [bmv2] [T] [thread 53052] [34.0] [cxt 0] mejora.p4(150) Primitive hdr.ethernet.dstAddr = dstAddr
+[01:16:25.102] [bmv2] [T] [thread 53052] [34.0] [cxt 0] mejora.p4(152) Primitive standard_metadata.egress_spec = port
+[01:16:25.102] [bmv2] [T] [thread 53052] [34.0] [cxt 0] mejora.p4(153) Primitive hdr.mpls.ttl = hdr.mpls.ttl - 1
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Pipeline 'ingress': end
+[01:16:25.102] [bmv2] [D] [thread 53052] [34.0] [cxt 0] Egress port is 1
+[01:16:25.102] [bmv2] [D] [thread 53054] [34.0] [cxt 0] Pipeline 'egress': start
+[01:16:25.102] [bmv2] [T] [thread 53054] [34.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is true
+[01:16:25.102] [bmv2] [T] [thread 53054] [34.0] [cxt 0] Applying table 'MyEgress.check_is_egress_border'
+[01:16:25.102] [bmv2] [D] [thread 53054] [34.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0001
+
+[01:16:25.102] [bmv2] [D] [thread 53054] [34.0] [cxt 0] Table 'MyEgress.check_is_egress_border': hit with handle 0
+[01:16:25.102] [bmv2] [D] [thread 53054] [34.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.egress_port: EXACT     0001
+Action entry: MyEgress.is_egress_border - 
+
+[01:16:25.102] [bmv2] [D] [thread 53054] [34.0] [cxt 0] Action entry is MyEgress.is_egress_border - 
+[01:16:25.102] [bmv2] [T] [thread 53054] [34.0] [cxt 0] Action MyEgress.is_egress_border
+[01:16:25.102] [bmv2] [T] [thread 53054] [34.0] [cxt 0] mejora.p4(236) Primitive hdr.mpls.setInvalid()
+[01:16:25.102] [bmv2] [T] [thread 53054] [34.0] [cxt 0] mejora.p4(5) Primitive 0x800; ...
+[01:16:25.102] [bmv2] [T] [thread 53054] [34.0] [cxt 0] mejora.p4(238) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[01:16:25.102] [bmv2] [D] [thread 53054] [34.0] [cxt 0] Pipeline 'egress': end
+[01:16:25.102] [bmv2] [D] [thread 53054] [34.0] [cxt 0] Deparser 'deparser': start
+[01:16:25.102] [bmv2] [D] [thread 53054] [34.0] [cxt 0] Updating checksum 'cksum'
+[01:16:25.103] [bmv2] [D] [thread 53054] [34.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:25.103] [bmv2] [D] [thread 53054] [34.0] [cxt 0] Deparsing header 'ipv4'
+[01:16:25.103] [bmv2] [D] [thread 53054] [34.0] [cxt 0] Deparser 'deparser': end
+[01:16:25.103] [bmv2] [D] [thread 53057] [34.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[01:16:25.103] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Processing packet received on port 1
+[01:16:25.103] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Parser 'parser': start
+[01:16:25.103] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:25.103] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Extracting header 'ethernet'
+[01:16:25.103] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Parser state 'start': key is 0800
+[01:16:25.103] [bmv2] [T] [thread 53052] [35.0] [cxt 0] Bytes parsed: 14
+[01:16:25.103] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[01:16:25.103] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Extracting header 'ipv4'
+[01:16:25.103] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[01:16:25.103] [bmv2] [T] [thread 53052] [35.0] [cxt 0] Bytes parsed: 34
+[01:16:25.103] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Parser 'parser': end
+[01:16:25.103] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Pipeline 'ingress': start
+[01:16:25.103] [bmv2] [T] [thread 53052] [35.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is true
+[01:16:25.103] [bmv2] [T] [thread 53052] [35.0] [cxt 0] mejora.p4(203) Condition "hdr.ipv4.protocol == 1" (node_3) is true
+[01:16:25.103] [bmv2] [T] [thread 53052] [35.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[01:16:25.103] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[01:16:25.103] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': hit with handle 0
+[01:16:25.103] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_is_ingress_border - 
+
+[01:16:25.103] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Action entry is MyIngress.set_is_ingress_border - 
+[01:16:25.103] [bmv2] [T] [thread 53052] [35.0] [cxt 0] Action MyIngress.set_is_ingress_border
+[01:16:25.103] [bmv2] [T] [thread 53052] [35.0] [cxt 0] mejora.p4(113) Primitive meta.is_ingress_border = (bit<1>)1
+[01:16:25.103] [bmv2] [T] [thread 53052] [35.0] [cxt 0] mejora.p4(207) Condition "meta.is_ingress_border == 1" (node_5) is true
+[01:16:25.103] [bmv2] [T] [thread 53052] [35.0] [cxt 0] Applying table 'MyIngress.fec_to_label'
+[01:16:25.103] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a050202
+
+[01:16:25.103] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Table 'MyIngress.fec_to_label': hit with handle 0
+[01:16:25.104] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a050202/32
+Action entry: MyIngress.add_mpls_header - 2,
+
+[01:16:25.104] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Action entry is MyIngress.add_mpls_header - 2,
+[01:16:25.104] [bmv2] [T] [thread 53052] [35.0] [cxt 0] Action MyIngress.add_mpls_header
+[01:16:25.104] [bmv2] [T] [thread 53052] [35.0] [cxt 0] mejora.p4(129) Primitive hdr.mpls.setValid()
+[01:16:25.104] [bmv2] [T] [thread 53052] [35.0] [cxt 0] mejora.p4(130) Primitive hdr.mpls.label = tag
+[01:16:25.104] [bmv2] [T] [thread 53052] [35.0] [cxt 0] mejora.p4(131) Primitive hdr.mpls.s = 0
+[01:16:25.104] [bmv2] [T] [thread 53052] [35.0] [cxt 0] mejora.p4(132) Primitive hdr.mpls.ttl = 255
+[01:16:25.104] [bmv2] [T] [thread 53052] [35.0] [cxt 0] mejora.p4(6) Primitive 0x8847; ...
+[01:16:25.104] [bmv2] [T] [thread 53052] [35.0] [cxt 0] mejora.p4(212) Condition "hdr.mpls.isValid()" (node_7) is true
+[01:16:25.104] [bmv2] [T] [thread 53052] [35.0] [cxt 0] Applying table 'MyIngress.mpls_tbl'
+[01:16:25.104] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Looking up key:
+* hdr.mpls.label      : 000002
+
+[01:16:25.104] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Table 'MyIngress.mpls_tbl': hit with handle 0
+[01:16:25.104] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.mpls.label      : EXACT     000002
+Action entry: MyIngress.mpls_forward - 20100,2,
+
+[01:16:25.104] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Action entry is MyIngress.mpls_forward - 20100,2,
+[01:16:25.104] [bmv2] [T] [thread 53052] [35.0] [cxt 0] Action MyIngress.mpls_forward
+[01:16:25.104] [bmv2] [T] [thread 53052] [35.0] [cxt 0] mejora.p4(149) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[01:16:25.104] [bmv2] [T] [thread 53052] [35.0] [cxt 0] mejora.p4(150) Primitive hdr.ethernet.dstAddr = dstAddr
+[01:16:25.104] [bmv2] [T] [thread 53052] [35.0] [cxt 0] mejora.p4(152) Primitive standard_metadata.egress_spec = port
+[01:16:25.104] [bmv2] [T] [thread 53052] [35.0] [cxt 0] mejora.p4(153) Primitive hdr.mpls.ttl = hdr.mpls.ttl - 1
+[01:16:25.104] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Pipeline 'ingress': end
+[01:16:25.104] [bmv2] [D] [thread 53052] [35.0] [cxt 0] Egress port is 2
+[01:16:25.104] [bmv2] [D] [thread 53055] [35.0] [cxt 0] Pipeline 'egress': start
+[01:16:25.104] [bmv2] [T] [thread 53055] [35.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is true
+[01:16:25.104] [bmv2] [T] [thread 53055] [35.0] [cxt 0] Applying table 'MyEgress.check_is_egress_border'
+[01:16:25.104] [bmv2] [D] [thread 53055] [35.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0002
+
+[01:16:25.104] [bmv2] [D] [thread 53055] [35.0] [cxt 0] Table 'MyEgress.check_is_egress_border': miss
+[01:16:25.104] [bmv2] [D] [thread 53055] [35.0] [cxt 0] Action entry is NoAction - 
+[01:16:25.104] [bmv2] [T] [thread 53055] [35.0] [cxt 0] Action NoAction
+[01:16:25.104] [bmv2] [D] [thread 53055] [35.0] [cxt 0] Pipeline 'egress': end
+[01:16:25.104] [bmv2] [D] [thread 53055] [35.0] [cxt 0] Deparser 'deparser': start
+[01:16:25.104] [bmv2] [D] [thread 53055] [35.0] [cxt 0] Updating checksum 'cksum'
+[01:16:25.104] [bmv2] [D] [thread 53055] [35.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:25.104] [bmv2] [D] [thread 53055] [35.0] [cxt 0] Deparsing header 'mpls'
+[01:16:25.104] [bmv2] [D] [thread 53055] [35.0] [cxt 0] Deparsing header 'ipv4'
+[01:16:25.104] [bmv2] [D] [thread 53055] [35.0] [cxt 0] Deparser 'deparser': end
+[01:16:25.104] [bmv2] [D] [thread 53057] [35.0] [cxt 0] Transmitting packet of size 102 out of port 2
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Processing packet received on port 3
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Parser 'parser': start
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Extracting header 'ethernet'
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Parser state 'start': key is 8847
+[01:16:25.145] [bmv2] [T] [thread 53052] [36.0] [cxt 0] Bytes parsed: 14
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Parser 'parser' entering state 'parse_mpls'
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Extracting header 'mpls'
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Parser state 'parse_mpls' has no switch, going to default next state
+[01:16:25.145] [bmv2] [T] [thread 53052] [36.0] [cxt 0] Bytes parsed: 18
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Extracting header 'ipv4'
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[01:16:25.145] [bmv2] [T] [thread 53052] [36.0] [cxt 0] Bytes parsed: 38
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Parser 'parser': end
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Pipeline 'ingress': start
+[01:16:25.145] [bmv2] [T] [thread 53052] [36.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is true
+[01:16:25.145] [bmv2] [T] [thread 53052] [36.0] [cxt 0] mejora.p4(203) Condition "hdr.ipv4.protocol == 1" (node_3) is true
+[01:16:25.145] [bmv2] [T] [thread 53052] [36.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0003
+
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Action entry is NoAction - 
+[01:16:25.145] [bmv2] [T] [thread 53052] [36.0] [cxt 0] Action NoAction
+[01:16:25.145] [bmv2] [T] [thread 53052] [36.0] [cxt 0] mejora.p4(207) Condition "meta.is_ingress_border == 1" (node_5) is false
+[01:16:25.145] [bmv2] [T] [thread 53052] [36.0] [cxt 0] mejora.p4(212) Condition "hdr.mpls.isValid()" (node_7) is true
+[01:16:25.145] [bmv2] [T] [thread 53052] [36.0] [cxt 0] Applying table 'MyIngress.mpls_tbl'
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Looking up key:
+* hdr.mpls.label      : 000001
+
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Table 'MyIngress.mpls_tbl': hit with handle 3
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Dumping entry 3
+Match key:
+* hdr.mpls.label      : EXACT     000001
+Action entry: MyIngress.mpls_forward - a010102,1,
+
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Action entry is MyIngress.mpls_forward - a010102,1,
+[01:16:25.145] [bmv2] [T] [thread 53052] [36.0] [cxt 0] Action MyIngress.mpls_forward
+[01:16:25.145] [bmv2] [T] [thread 53052] [36.0] [cxt 0] mejora.p4(149) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[01:16:25.145] [bmv2] [T] [thread 53052] [36.0] [cxt 0] mejora.p4(150) Primitive hdr.ethernet.dstAddr = dstAddr
+[01:16:25.145] [bmv2] [T] [thread 53052] [36.0] [cxt 0] mejora.p4(152) Primitive standard_metadata.egress_spec = port
+[01:16:25.145] [bmv2] [T] [thread 53052] [36.0] [cxt 0] mejora.p4(153) Primitive hdr.mpls.ttl = hdr.mpls.ttl - 1
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Pipeline 'ingress': end
+[01:16:25.145] [bmv2] [D] [thread 53052] [36.0] [cxt 0] Egress port is 1
+[01:16:25.145] [bmv2] [D] [thread 53054] [36.0] [cxt 0] Pipeline 'egress': start
+[01:16:25.145] [bmv2] [T] [thread 53054] [36.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is true
+[01:16:25.145] [bmv2] [T] [thread 53054] [36.0] [cxt 0] Applying table 'MyEgress.check_is_egress_border'
+[01:16:25.145] [bmv2] [D] [thread 53054] [36.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0001
+
+[01:16:25.145] [bmv2] [D] [thread 53054] [36.0] [cxt 0] Table 'MyEgress.check_is_egress_border': hit with handle 0
+[01:16:25.145] [bmv2] [D] [thread 53054] [36.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.egress_port: EXACT     0001
+Action entry: MyEgress.is_egress_border - 
+
+[01:16:25.145] [bmv2] [D] [thread 53054] [36.0] [cxt 0] Action entry is MyEgress.is_egress_border - 
+[01:16:25.145] [bmv2] [T] [thread 53054] [36.0] [cxt 0] Action MyEgress.is_egress_border
+[01:16:25.145] [bmv2] [T] [thread 53054] [36.0] [cxt 0] mejora.p4(236) Primitive hdr.mpls.setInvalid()
+[01:16:25.145] [bmv2] [T] [thread 53054] [36.0] [cxt 0] mejora.p4(5) Primitive 0x800; ...
+[01:16:25.145] [bmv2] [T] [thread 53054] [36.0] [cxt 0] mejora.p4(238) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[01:16:25.145] [bmv2] [D] [thread 53054] [36.0] [cxt 0] Pipeline 'egress': end
+[01:16:25.145] [bmv2] [D] [thread 53054] [36.0] [cxt 0] Deparser 'deparser': start
+[01:16:25.145] [bmv2] [D] [thread 53054] [36.0] [cxt 0] Updating checksum 'cksum'
+[01:16:25.145] [bmv2] [D] [thread 53054] [36.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:25.145] [bmv2] [D] [thread 53054] [36.0] [cxt 0] Deparsing header 'ipv4'
+[01:16:25.145] [bmv2] [D] [thread 53054] [36.0] [cxt 0] Deparser 'deparser': end
+[01:16:25.145] [bmv2] [D] [thread 53057] [36.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Processing packet received on port 1
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Parser 'parser': start
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Extracting header 'ethernet'
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Parser state 'start': key is 0800
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] Bytes parsed: 14
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Extracting header 'ipv4'
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] Bytes parsed: 34
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Parser 'parser': end
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Pipeline 'ingress': start
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is true
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] mejora.p4(203) Condition "hdr.ipv4.protocol == 1" (node_3) is true
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': hit with handle 0
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_is_ingress_border - 
+
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Action entry is MyIngress.set_is_ingress_border - 
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] Action MyIngress.set_is_ingress_border
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] mejora.p4(113) Primitive meta.is_ingress_border = (bit<1>)1
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] mejora.p4(207) Condition "meta.is_ingress_border == 1" (node_5) is true
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] Applying table 'MyIngress.fec_to_label'
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a060302
+
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Table 'MyIngress.fec_to_label': hit with handle 1
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Dumping entry 1
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a060302/32
+Action entry: MyIngress.add_mpls_header - 3,
+
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Action entry is MyIngress.add_mpls_header - 3,
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] Action MyIngress.add_mpls_header
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] mejora.p4(129) Primitive hdr.mpls.setValid()
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] mejora.p4(130) Primitive hdr.mpls.label = tag
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] mejora.p4(131) Primitive hdr.mpls.s = 0
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] mejora.p4(132) Primitive hdr.mpls.ttl = 255
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] mejora.p4(6) Primitive 0x8847; ...
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] mejora.p4(212) Condition "hdr.mpls.isValid()" (node_7) is true
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] Applying table 'MyIngress.mpls_tbl'
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Looking up key:
+* hdr.mpls.label      : 000003
+
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Table 'MyIngress.mpls_tbl': hit with handle 1
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Dumping entry 1
+Match key:
+* hdr.mpls.label      : EXACT     000003
+Action entry: MyIngress.mpls_forward - 40100,4,
+
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Action entry is MyIngress.mpls_forward - 40100,4,
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] Action MyIngress.mpls_forward
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] mejora.p4(149) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] mejora.p4(150) Primitive hdr.ethernet.dstAddr = dstAddr
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] mejora.p4(152) Primitive standard_metadata.egress_spec = port
+[01:16:25.146] [bmv2] [T] [thread 53052] [37.0] [cxt 0] mejora.p4(153) Primitive hdr.mpls.ttl = hdr.mpls.ttl - 1
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Pipeline 'ingress': end
+[01:16:25.146] [bmv2] [D] [thread 53052] [37.0] [cxt 0] Egress port is 4
+[01:16:25.146] [bmv2] [D] [thread 53053] [37.0] [cxt 0] Pipeline 'egress': start
+[01:16:25.146] [bmv2] [T] [thread 53053] [37.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is true
+[01:16:25.146] [bmv2] [T] [thread 53053] [37.0] [cxt 0] Applying table 'MyEgress.check_is_egress_border'
+[01:16:25.146] [bmv2] [D] [thread 53053] [37.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0004
+
+[01:16:25.146] [bmv2] [D] [thread 53053] [37.0] [cxt 0] Table 'MyEgress.check_is_egress_border': miss
+[01:16:25.146] [bmv2] [D] [thread 53053] [37.0] [cxt 0] Action entry is NoAction - 
+[01:16:25.146] [bmv2] [T] [thread 53053] [37.0] [cxt 0] Action NoAction
+[01:16:25.146] [bmv2] [D] [thread 53053] [37.0] [cxt 0] Pipeline 'egress': end
+[01:16:25.146] [bmv2] [D] [thread 53053] [37.0] [cxt 0] Deparser 'deparser': start
+[01:16:25.146] [bmv2] [D] [thread 53053] [37.0] [cxt 0] Updating checksum 'cksum'
+[01:16:25.146] [bmv2] [D] [thread 53053] [37.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:25.146] [bmv2] [D] [thread 53053] [37.0] [cxt 0] Deparsing header 'mpls'
+[01:16:25.146] [bmv2] [D] [thread 53053] [37.0] [cxt 0] Deparsing header 'ipv4'
+[01:16:25.146] [bmv2] [D] [thread 53053] [37.0] [cxt 0] Deparser 'deparser': end
+[01:16:25.146] [bmv2] [D] [thread 53057] [37.0] [cxt 0] Transmitting packet of size 102 out of port 4
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Processing packet received on port 3
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Parser 'parser': start
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Extracting header 'ethernet'
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Parser state 'start': key is 8847
+[01:16:25.194] [bmv2] [T] [thread 53052] [38.0] [cxt 0] Bytes parsed: 14
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Parser 'parser' entering state 'parse_mpls'
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Extracting header 'mpls'
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Parser state 'parse_mpls' has no switch, going to default next state
+[01:16:25.194] [bmv2] [T] [thread 53052] [38.0] [cxt 0] Bytes parsed: 18
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Extracting header 'ipv4'
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[01:16:25.194] [bmv2] [T] [thread 53052] [38.0] [cxt 0] Bytes parsed: 38
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Parser 'parser': end
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Pipeline 'ingress': start
+[01:16:25.194] [bmv2] [T] [thread 53052] [38.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is true
+[01:16:25.194] [bmv2] [T] [thread 53052] [38.0] [cxt 0] mejora.p4(203) Condition "hdr.ipv4.protocol == 1" (node_3) is true
+[01:16:25.194] [bmv2] [T] [thread 53052] [38.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0003
+
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Action entry is NoAction - 
+[01:16:25.194] [bmv2] [T] [thread 53052] [38.0] [cxt 0] Action NoAction
+[01:16:25.194] [bmv2] [T] [thread 53052] [38.0] [cxt 0] mejora.p4(207) Condition "meta.is_ingress_border == 1" (node_5) is false
+[01:16:25.194] [bmv2] [T] [thread 53052] [38.0] [cxt 0] mejora.p4(212) Condition "hdr.mpls.isValid()" (node_7) is true
+[01:16:25.194] [bmv2] [T] [thread 53052] [38.0] [cxt 0] Applying table 'MyIngress.mpls_tbl'
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Looking up key:
+* hdr.mpls.label      : 000001
+
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Table 'MyIngress.mpls_tbl': hit with handle 3
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Dumping entry 3
+Match key:
+* hdr.mpls.label      : EXACT     000001
+Action entry: MyIngress.mpls_forward - a010102,1,
+
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Action entry is MyIngress.mpls_forward - a010102,1,
+[01:16:25.194] [bmv2] [T] [thread 53052] [38.0] [cxt 0] Action MyIngress.mpls_forward
+[01:16:25.194] [bmv2] [T] [thread 53052] [38.0] [cxt 0] mejora.p4(149) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[01:16:25.194] [bmv2] [T] [thread 53052] [38.0] [cxt 0] mejora.p4(150) Primitive hdr.ethernet.dstAddr = dstAddr
+[01:16:25.194] [bmv2] [T] [thread 53052] [38.0] [cxt 0] mejora.p4(152) Primitive standard_metadata.egress_spec = port
+[01:16:25.194] [bmv2] [T] [thread 53052] [38.0] [cxt 0] mejora.p4(153) Primitive hdr.mpls.ttl = hdr.mpls.ttl - 1
+[01:16:25.194] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Pipeline 'ingress': end
+[01:16:25.195] [bmv2] [D] [thread 53052] [38.0] [cxt 0] Egress port is 1
+[01:16:25.195] [bmv2] [D] [thread 53054] [38.0] [cxt 0] Pipeline 'egress': start
+[01:16:25.195] [bmv2] [T] [thread 53054] [38.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is true
+[01:16:25.195] [bmv2] [T] [thread 53054] [38.0] [cxt 0] Applying table 'MyEgress.check_is_egress_border'
+[01:16:25.195] [bmv2] [D] [thread 53054] [38.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0001
+
+[01:16:25.195] [bmv2] [D] [thread 53054] [38.0] [cxt 0] Table 'MyEgress.check_is_egress_border': hit with handle 0
+[01:16:25.195] [bmv2] [D] [thread 53054] [38.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.egress_port: EXACT     0001
+Action entry: MyEgress.is_egress_border - 
+
+[01:16:25.195] [bmv2] [D] [thread 53054] [38.0] [cxt 0] Action entry is MyEgress.is_egress_border - 
+[01:16:25.195] [bmv2] [T] [thread 53054] [38.0] [cxt 0] Action MyEgress.is_egress_border
+[01:16:25.195] [bmv2] [T] [thread 53054] [38.0] [cxt 0] mejora.p4(236) Primitive hdr.mpls.setInvalid()
+[01:16:25.195] [bmv2] [T] [thread 53054] [38.0] [cxt 0] mejora.p4(5) Primitive 0x800; ...
+[01:16:25.195] [bmv2] [T] [thread 53054] [38.0] [cxt 0] mejora.p4(238) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[01:16:25.195] [bmv2] [D] [thread 53054] [38.0] [cxt 0] Pipeline 'egress': end
+[01:16:25.195] [bmv2] [D] [thread 53054] [38.0] [cxt 0] Deparser 'deparser': start
+[01:16:25.195] [bmv2] [D] [thread 53054] [38.0] [cxt 0] Updating checksum 'cksum'
+[01:16:25.195] [bmv2] [D] [thread 53054] [38.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:25.195] [bmv2] [D] [thread 53054] [38.0] [cxt 0] Deparsing header 'ipv4'
+[01:16:25.195] [bmv2] [D] [thread 53054] [38.0] [cxt 0] Deparser 'deparser': end
+[01:16:25.195] [bmv2] [D] [thread 53057] [38.0] [cxt 0] Transmitting packet of size 98 out of port 1
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Processing packet received on port 1
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Parser 'parser': start
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Parser 'parser' entering state 'start'
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Extracting header 'ethernet'
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Parser state 'start': key is 0800
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] Bytes parsed: 14
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Extracting header 'ipv4'
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] Bytes parsed: 34
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Parser 'parser': end
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Pipeline 'ingress': start
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] mejora.p4(202) Condition "hdr.ipv4.isValid()" (node_2) is true
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] mejora.p4(203) Condition "hdr.ipv4.protocol == 1" (node_3) is true
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': hit with handle 0
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Dumping entry 0
+Match key:
+* standard_metadata.ingress_port: EXACT     0001
+Action entry: MyIngress.set_is_ingress_border - 
+
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Action entry is MyIngress.set_is_ingress_border - 
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] Action MyIngress.set_is_ingress_border
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] mejora.p4(113) Primitive meta.is_ingress_border = (bit<1>)1
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] mejora.p4(207) Condition "meta.is_ingress_border == 1" (node_5) is true
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] Applying table 'MyIngress.fec_to_label'
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a0a0402
+
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Table 'MyIngress.fec_to_label': hit with handle 2
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a0a0402/32
+Action entry: MyIngress.add_mpls_header - 4,
+
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Action entry is MyIngress.add_mpls_header - 4,
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] Action MyIngress.add_mpls_header
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] mejora.p4(129) Primitive hdr.mpls.setValid()
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] mejora.p4(130) Primitive hdr.mpls.label = tag
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] mejora.p4(131) Primitive hdr.mpls.s = 0
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] mejora.p4(132) Primitive hdr.mpls.ttl = 255
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] mejora.p4(6) Primitive 0x8847; ...
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] mejora.p4(212) Condition "hdr.mpls.isValid()" (node_7) is true
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] Applying table 'MyIngress.mpls_tbl'
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Looking up key:
+* hdr.mpls.label      : 000004
+
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Table 'MyIngress.mpls_tbl': hit with handle 2
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Dumping entry 2
+Match key:
+* hdr.mpls.label      : EXACT     000004
+Action entry: MyIngress.mpls_forward - 30100,3,
+
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Action entry is MyIngress.mpls_forward - 30100,3,
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] Action MyIngress.mpls_forward
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] mejora.p4(149) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] mejora.p4(150) Primitive hdr.ethernet.dstAddr = dstAddr
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] mejora.p4(152) Primitive standard_metadata.egress_spec = port
+[01:16:25.195] [bmv2] [T] [thread 53052] [39.0] [cxt 0] mejora.p4(153) Primitive hdr.mpls.ttl = hdr.mpls.ttl - 1
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Pipeline 'ingress': end
+[01:16:25.195] [bmv2] [D] [thread 53052] [39.0] [cxt 0] Egress port is 3
+[01:16:25.195] [bmv2] [D] [thread 53056] [39.0] [cxt 0] Pipeline 'egress': start
+[01:16:25.195] [bmv2] [T] [thread 53056] [39.0] [cxt 0] mejora.p4(255) Condition "hdr.mpls.isValid()" (node_14) is true
+[01:16:25.195] [bmv2] [T] [thread 53056] [39.0] [cxt 0] Applying table 'MyEgress.check_is_egress_border'
+[01:16:25.195] [bmv2] [D] [thread 53056] [39.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0003
+
+[01:16:25.195] [bmv2] [D] [thread 53056] [39.0] [cxt 0] Table 'MyEgress.check_is_egress_border': miss
+[01:16:25.195] [bmv2] [D] [thread 53056] [39.0] [cxt 0] Action entry is NoAction - 
+[01:16:25.195] [bmv2] [T] [thread 53056] [39.0] [cxt 0] Action NoAction
+[01:16:25.195] [bmv2] [D] [thread 53056] [39.0] [cxt 0] Pipeline 'egress': end
+[01:16:25.195] [bmv2] [D] [thread 53056] [39.0] [cxt 0] Deparser 'deparser': start
+[01:16:25.195] [bmv2] [D] [thread 53056] [39.0] [cxt 0] Updating checksum 'cksum'
+[01:16:25.195] [bmv2] [D] [thread 53056] [39.0] [cxt 0] Deparsing header 'ethernet'
+[01:16:25.195] [bmv2] [D] [thread 53056] [39.0] [cxt 0] Deparsing header 'mpls'
+[01:16:25.195] [bmv2] [D] [thread 53056] [39.0] [cxt 0] Deparsing header 'ipv4'
+[01:16:25.195] [bmv2] [D] [thread 53056] [39.0] [cxt 0] Deparser 'deparser': end
+[01:16:25.196] [bmv2] [D] [thread 53057] [39.0] [cxt 0] Transmitting packet of size 102 out of port 3

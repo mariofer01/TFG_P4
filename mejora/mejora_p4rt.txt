@@ -1,0 +1,200 @@
+pkg_info {
+  arch: "v1model"
+}
+tables {
+  preamble {
+    id: 45351264
+    name: "MyIngress.check_is_ingress_border"
+    alias: "check_is_ingress_border"
+  }
+  match_fields {
+    id: 1
+    name: "standard_metadata.ingress_port"
+    bitwidth: 9
+    match_type: EXACT
+  }
+  action_refs {
+    id: 21257015
+  }
+  action_refs {
+    id: 28230954
+  }
+  size: 32
+}
+tables {
+  preamble {
+    id: 33885473
+    name: "MyIngress.fec_to_label"
+    alias: "fec_to_label"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: LPM
+  }
+  action_refs {
+    id: 21257015
+  }
+  action_refs {
+    id: 22737342
+  }
+  size: 10
+}
+tables {
+  preamble {
+    id: 45496710
+    name: "MyIngress.mpls_tbl"
+    alias: "mpls_tbl"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.mpls.label"
+    bitwidth: 20
+    match_type: EXACT
+  }
+  action_refs {
+    id: 27068996
+  }
+  action_refs {
+    id: 25652968
+  }
+  size: 10
+}
+tables {
+  preamble {
+    id: 34862149
+    name: "MyIngress.ipv4_ef"
+    alias: "ipv4_ef"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: LPM
+  }
+  action_refs {
+    id: 28792405
+  }
+  action_refs {
+    id: 25652968
+  }
+  size: 128
+}
+tables {
+  preamble {
+    id: 45852855
+    name: "MyIngress.ipv4_any"
+    alias: "ipv4_any"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.ipv4.dstAddr"
+    bitwidth: 32
+    match_type: LPM
+  }
+  action_refs {
+    id: 28792405
+  }
+  action_refs {
+    id: 25652968
+  }
+  size: 128
+}
+tables {
+  preamble {
+    id: 43518451
+    name: "MyEgress.check_is_egress_border"
+    alias: "check_is_egress_border"
+  }
+  match_fields {
+    id: 1
+    name: "standard_metadata.egress_port"
+    bitwidth: 9
+    match_type: EXACT
+  }
+  action_refs {
+    id: 21257015
+  }
+  action_refs {
+    id: 21205772
+  }
+  size: 32
+}
+actions {
+  preamble {
+    id: 21257015
+    name: "NoAction"
+    alias: "NoAction"
+    annotations: "@noWarn(\"unused\")"
+  }
+}
+actions {
+  preamble {
+    id: 25652968
+    name: "MyIngress.drop"
+    alias: "drop"
+  }
+}
+actions {
+  preamble {
+    id: 28230954
+    name: "MyIngress.set_is_ingress_border"
+    alias: "set_is_ingress_border"
+  }
+}
+actions {
+  preamble {
+    id: 22737342
+    name: "MyIngress.add_mpls_header"
+    alias: "add_mpls_header"
+  }
+  params {
+    id: 1
+    name: "tag"
+    bitwidth: 20
+  }
+}
+actions {
+  preamble {
+    id: 27068996
+    name: "MyIngress.mpls_forward"
+    alias: "mpls_forward"
+  }
+  params {
+    id: 1
+    name: "dstAddr"
+    bitwidth: 48
+  }
+  params {
+    id: 2
+    name: "port"
+    bitwidth: 9
+  }
+}
+actions {
+  preamble {
+    id: 28792405
+    name: "MyIngress.ipv4_forward"
+    alias: "ipv4_forward"
+  }
+  params {
+    id: 1
+    name: "dstAddr"
+    bitwidth: 48
+  }
+  params {
+    id: 2
+    name: "port"
+    bitwidth: 9
+  }
+}
+actions {
+  preamble {
+    id: 21205772
+    name: "MyEgress.is_egress_border"
+    alias: "is_egress_border"
+  }
+}
+type_info {
+}
