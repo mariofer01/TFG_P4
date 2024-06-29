@@ -1011,7 +1011,7 @@ control MyIngress(inout headers hdr,
     action add_mpls_header(bit<20> tag) {
         hdr.mpls.setValid();
         hdr.mpls.label = tag;
-        hdr.mpls.s = 0;
+        hdr.mpls.s = 1;
         hdr.mpls.ttl = 255;
         hdr.ethernet.etherType = TYPE_MPLS;
     }

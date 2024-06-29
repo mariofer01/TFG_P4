@@ -456,14 +456,14 @@
             },
             {
               "type" : "hexstr",
-              "value" : "0x00"
+              "value" : "0x01"
             }
           ],
           "source_info" : {
             "filename" : "mejora.p4",
             "line" : 131,
             "column" : 8,
-            "source_fragment" : "hdr.mpls.s = 0"
+            "source_fragment" : "hdr.mpls.s = 1"
           }
         },
         {

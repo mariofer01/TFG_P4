@@ -1,280 +1,346 @@
 Calling target program-options parser
-[20:28:25.779] [bmv2] [D] [thread 42349] Set default default entry for table 'MyIngress.check_is_ingress_border': NoAction - 
-[20:28:25.780] [bmv2] [D] [thread 42349] Set default default entry for table 'MyIngress.fec_to_label': NoAction - 
-[20:28:25.780] [bmv2] [D] [thread 42349] Set default default entry for table 'MyIngress.mpls_tbl': MyIngress.drop - 
-[20:28:25.782] [bmv2] [D] [thread 42349] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
-[20:28:25.782] [bmv2] [D] [thread 42349] Set default default entry for table 'MyEgress.check_is_egress_border': NoAction - 
+[21:44:53.889] [bmv2] [D] [thread 71213] Set default default entry for table 'MyIngress.check_is_ingress_border': NoAction - 
+[21:44:53.889] [bmv2] [D] [thread 71213] Set default default entry for table 'MyIngress.fec_to_label': NoAction - 
+[21:44:53.889] [bmv2] [D] [thread 71213] Set default default entry for table 'MyIngress.mpls_tbl': MyIngress.drop - 
+[21:44:53.889] [bmv2] [D] [thread 71213] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[21:44:53.889] [bmv2] [D] [thread 71213] Set default default entry for table 'MyEgress.check_is_egress_border': NoAction - 
 Adding interface s4-eth1 as port 1
-[20:28:25.783] [bmv2] [D] [thread 42349] Adding interface s4-eth1 as port 1
+[21:44:53.890] [bmv2] [D] [thread 71213] Adding interface s4-eth1 as port 1
 Adding interface s4-eth2 as port 2
-[20:28:25.806] [bmv2] [D] [thread 42349] Adding interface s4-eth2 as port 2
+[21:44:53.914] [bmv2] [D] [thread 71213] Adding interface s4-eth2 as port 2
 Server listening on 0.0.0.0:9562
-[20:28:25.820] [bmv2] [I] [thread 42349] Starting Thrift server on port 9093
-[20:28:25.830] [bmv2] [I] [thread 42349] Thrift server was started
-[20:28:26.190] [bmv2] [D] [thread 42360] [0.0] [cxt 0] Processing packet received on port 1
-[20:28:26.190] [bmv2] [D] [thread 42360] [0.0] [cxt 0] Parser 'parser': start
-[20:28:26.190] [bmv2] [D] [thread 42360] [0.0] [cxt 0] Parser 'parser' entering state 'start'
-[20:28:26.190] [bmv2] [D] [thread 42360] [0.0] [cxt 0] Extracting header 'ethernet'
-[20:28:26.190] [bmv2] [D] [thread 42360] [0.0] [cxt 0] Parser state 'start': key is 86dd
-[20:28:26.190] [bmv2] [T] [thread 42360] [0.0] [cxt 0] Bytes parsed: 14
-[20:28:26.190] [bmv2] [D] [thread 42360] [0.0] [cxt 0] Parser 'parser': end
-[20:28:26.190] [bmv2] [D] [thread 42360] [0.0] [cxt 0] Pipeline 'ingress': start
-[20:28:26.190] [bmv2] [T] [thread 42360] [0.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
-[20:28:26.190] [bmv2] [D] [thread 42360] [0.0] [cxt 0] Looking up key:
+[21:44:53.927] [bmv2] [I] [thread 71213] Starting Thrift server on port 9093
+[21:44:53.931] [bmv2] [I] [thread 71213] Thrift server was started
+[21:44:53.936] [bmv2] [D] [thread 71225] [0.0] [cxt 0] Processing packet received on port 1
+[21:44:53.936] [bmv2] [D] [thread 71225] [0.0] [cxt 0] Parser 'parser': start
+[21:44:53.936] [bmv2] [D] [thread 71225] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:44:53.936] [bmv2] [D] [thread 71225] [0.0] [cxt 0] Extracting header 'ethernet'
+[21:44:53.936] [bmv2] [D] [thread 71225] [0.0] [cxt 0] Parser state 'start': key is 86dd
+[21:44:53.936] [bmv2] [T] [thread 71225] [0.0] [cxt 0] Bytes parsed: 14
+[21:44:53.936] [bmv2] [D] [thread 71225] [0.0] [cxt 0] Parser 'parser': end
+[21:44:53.936] [bmv2] [D] [thread 71225] [0.0] [cxt 0] Pipeline 'ingress': start
+[21:44:53.936] [bmv2] [T] [thread 71225] [0.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[21:44:53.936] [bmv2] [D] [thread 71225] [0.0] [cxt 0] Looking up key:
 * standard_metadata.ingress_port: 0001
 
-[20:28:26.190] [bmv2] [D] [thread 42360] [0.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
-[20:28:26.190] [bmv2] [D] [thread 42360] [0.0] [cxt 0] Action entry is NoAction - 
-[20:28:26.190] [bmv2] [T] [thread 42360] [0.0] [cxt 0] Action NoAction
-[20:28:26.190] [bmv2] [T] [thread 42360] [0.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(193) Condition "meta.is_ingress_border == 1" (node_3) is false
-[20:28:26.190] [bmv2] [T] [thread 42360] [0.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(204) Condition "hdr.mpls.isValid()" (node_6) is false
-[20:28:26.190] [bmv2] [T] [thread 42360] [0.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(209) Condition "hdr.ipv4.isValid()" (node_8) is false
-[20:28:26.190] [bmv2] [D] [thread 42360] [0.0] [cxt 0] Pipeline 'ingress': end
-[20:28:26.190] [bmv2] [D] [thread 42360] [0.0] [cxt 0] Egress port is 0
-[20:28:26.190] [bmv2] [D] [thread 42360] [1.0] [cxt 0] Processing packet received on port 1
-[20:28:26.190] [bmv2] [D] [thread 42360] [1.0] [cxt 0] Parser 'parser': start
-[20:28:26.190] [bmv2] [D] [thread 42360] [1.0] [cxt 0] Parser 'parser' entering state 'start'
-[20:28:26.190] [bmv2] [D] [thread 42360] [1.0] [cxt 0] Extracting header 'ethernet'
-[20:28:26.190] [bmv2] [D] [thread 42360] [1.0] [cxt 0] Parser state 'start': key is 86dd
-[20:28:26.190] [bmv2] [T] [thread 42360] [1.0] [cxt 0] Bytes parsed: 14
-[20:28:26.190] [bmv2] [D] [thread 42360] [1.0] [cxt 0] Parser 'parser': end
-[20:28:26.190] [bmv2] [D] [thread 42360] [1.0] [cxt 0] Pipeline 'ingress': start
-[20:28:26.190] [bmv2] [T] [thread 42360] [1.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
-[20:28:26.190] [bmv2] [D] [thread 42360] [1.0] [cxt 0] Looking up key:
+[21:44:53.936] [bmv2] [D] [thread 71225] [0.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
+[21:44:53.936] [bmv2] [D] [thread 71225] [0.0] [cxt 0] Action entry is NoAction - 
+[21:44:53.936] [bmv2] [T] [thread 71225] [0.0] [cxt 0] Action NoAction
+[21:44:53.936] [bmv2] [T] [thread 71225] [0.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(193) Condition "meta.is_ingress_border == 1" (node_3) is false
+[21:44:53.936] [bmv2] [T] [thread 71225] [0.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(204) Condition "hdr.mpls.isValid()" (node_6) is false
+[21:44:53.936] [bmv2] [T] [thread 71225] [0.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(209) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:44:53.936] [bmv2] [D] [thread 71225] [0.0] [cxt 0] Pipeline 'ingress': end
+[21:44:53.936] [bmv2] [D] [thread 71225] [0.0] [cxt 0] Egress port is 0
+[21:44:53.936] [bmv2] [D] [thread 71226] [0.0] [cxt 0] Pipeline 'egress': start
+[21:44:53.936] [bmv2] [T] [thread 71226] [0.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(247) Condition "hdr.mpls.isValid()" (node_12) is false
+[21:44:53.936] [bmv2] [D] [thread 71226] [0.0] [cxt 0] Pipeline 'egress': end
+[21:44:53.936] [bmv2] [D] [thread 71226] [0.0] [cxt 0] Deparser 'deparser': start
+[21:44:53.936] [bmv2] [T] [thread 71226] [0.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:44:53.936] [bmv2] [D] [thread 71226] [0.0] [cxt 0] Deparsing header 'ethernet'
+[21:44:53.936] [bmv2] [D] [thread 71226] [0.0] [cxt 0] Deparser 'deparser': end
+[21:44:53.936] [bmv2] [D] [thread 71230] [0.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:44:54.136] [bmv2] [D] [thread 71225] [1.0] [cxt 0] Processing packet received on port 2
+[21:44:54.136] [bmv2] [D] [thread 71225] [1.0] [cxt 0] Parser 'parser': start
+[21:44:54.136] [bmv2] [D] [thread 71225] [1.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:44:54.136] [bmv2] [D] [thread 71225] [1.0] [cxt 0] Extracting header 'ethernet'
+[21:44:54.136] [bmv2] [D] [thread 71225] [1.0] [cxt 0] Parser state 'start': key is 86dd
+[21:44:54.136] [bmv2] [T] [thread 71225] [1.0] [cxt 0] Bytes parsed: 14
+[21:44:54.136] [bmv2] [D] [thread 71225] [1.0] [cxt 0] Parser 'parser': end
+[21:44:54.136] [bmv2] [D] [thread 71225] [1.0] [cxt 0] Pipeline 'ingress': start
+[21:44:54.136] [bmv2] [T] [thread 71225] [1.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[21:44:54.137] [bmv2] [D] [thread 71225] [1.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[21:44:54.137] [bmv2] [D] [thread 71225] [1.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
+[21:44:54.137] [bmv2] [D] [thread 71225] [1.0] [cxt 0] Action entry is NoAction - 
+[21:44:54.137] [bmv2] [T] [thread 71225] [1.0] [cxt 0] Action NoAction
+[21:44:54.137] [bmv2] [T] [thread 71225] [1.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(193) Condition "meta.is_ingress_border == 1" (node_3) is false
+[21:44:54.137] [bmv2] [T] [thread 71225] [1.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(204) Condition "hdr.mpls.isValid()" (node_6) is false
+[21:44:54.137] [bmv2] [T] [thread 71225] [1.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(209) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:44:54.137] [bmv2] [D] [thread 71225] [1.0] [cxt 0] Pipeline 'ingress': end
+[21:44:54.137] [bmv2] [D] [thread 71225] [1.0] [cxt 0] Egress port is 0
+[21:44:54.137] [bmv2] [D] [thread 71226] [1.0] [cxt 0] Pipeline 'egress': start
+[21:44:54.137] [bmv2] [T] [thread 71226] [1.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(247) Condition "hdr.mpls.isValid()" (node_12) is false
+[21:44:54.137] [bmv2] [D] [thread 71226] [1.0] [cxt 0] Pipeline 'egress': end
+[21:44:54.137] [bmv2] [D] [thread 71226] [1.0] [cxt 0] Deparser 'deparser': start
+[21:44:54.137] [bmv2] [T] [thread 71226] [1.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:44:54.137] [bmv2] [D] [thread 71226] [1.0] [cxt 0] Deparsing header 'ethernet'
+[21:44:54.137] [bmv2] [D] [thread 71226] [1.0] [cxt 0] Deparser 'deparser': end
+[21:44:54.137] [bmv2] [D] [thread 71230] [1.0] [cxt 0] Transmitting packet of size 210 out of port 0
+[21:44:54.190] [bmv2] [D] [thread 71225] [2.0] [cxt 0] Processing packet received on port 1
+[21:44:54.190] [bmv2] [D] [thread 71225] [2.0] [cxt 0] Parser 'parser': start
+[21:44:54.190] [bmv2] [D] [thread 71225] [2.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:44:54.190] [bmv2] [D] [thread 71225] [2.0] [cxt 0] Extracting header 'ethernet'
+[21:44:54.190] [bmv2] [D] [thread 71225] [2.0] [cxt 0] Parser state 'start': key is 86dd
+[21:44:54.190] [bmv2] [T] [thread 71225] [2.0] [cxt 0] Bytes parsed: 14
+[21:44:54.190] [bmv2] [D] [thread 71225] [2.0] [cxt 0] Parser 'parser': end
+[21:44:54.190] [bmv2] [D] [thread 71225] [2.0] [cxt 0] Pipeline 'ingress': start
+[21:44:54.190] [bmv2] [T] [thread 71225] [2.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[21:44:54.190] [bmv2] [D] [thread 71225] [2.0] [cxt 0] Looking up key:
 * standard_metadata.ingress_port: 0001
 
-[20:28:26.190] [bmv2] [D] [thread 42360] [1.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
-[20:28:26.190] [bmv2] [D] [thread 42360] [1.0] [cxt 0] Action entry is NoAction - 
-[20:28:26.190] [bmv2] [T] [thread 42360] [1.0] [cxt 0] Action NoAction
-[20:28:26.190] [bmv2] [T] [thread 42360] [1.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(193) Condition "meta.is_ingress_border == 1" (node_3) is false
-[20:28:26.190] [bmv2] [T] [thread 42360] [1.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(204) Condition "hdr.mpls.isValid()" (node_6) is false
-[20:28:26.190] [bmv2] [T] [thread 42360] [1.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(209) Condition "hdr.ipv4.isValid()" (node_8) is false
-[20:28:26.190] [bmv2] [D] [thread 42360] [1.0] [cxt 0] Pipeline 'ingress': end
-[20:28:26.190] [bmv2] [D] [thread 42360] [1.0] [cxt 0] Egress port is 0
-[20:28:26.192] [bmv2] [D] [thread 42361] [0.0] [cxt 0] Pipeline 'egress': start
-[20:28:26.192] [bmv2] [T] [thread 42361] [0.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(247) Condition "hdr.mpls.isValid()" (node_12) is false
-[20:28:26.192] [bmv2] [D] [thread 42361] [0.0] [cxt 0] Pipeline 'egress': end
-[20:28:26.192] [bmv2] [D] [thread 42361] [0.0] [cxt 0] Deparser 'deparser': start
-[20:28:26.192] [bmv2] [T] [thread 42361] [0.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
-[20:28:26.192] [bmv2] [D] [thread 42361] [0.0] [cxt 0] Deparsing header 'ethernet'
-[20:28:26.192] [bmv2] [D] [thread 42361] [0.0] [cxt 0] Deparser 'deparser': end
-[20:28:26.192] [bmv2] [D] [thread 42361] [1.0] [cxt 0] Pipeline 'egress': start
-[20:28:26.192] [bmv2] [T] [thread 42361] [1.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(247) Condition "hdr.mpls.isValid()" (node_12) is false
-[20:28:26.192] [bmv2] [D] [thread 42361] [1.0] [cxt 0] Pipeline 'egress': end
-[20:28:26.192] [bmv2] [D] [thread 42361] [1.0] [cxt 0] Deparser 'deparser': start
-[20:28:26.192] [bmv2] [T] [thread 42361] [1.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
-[20:28:26.192] [bmv2] [D] [thread 42361] [1.0] [cxt 0] Deparsing header 'ethernet'
-[20:28:26.192] [bmv2] [D] [thread 42361] [1.0] [cxt 0] Deparser 'deparser': end
-[20:28:26.192] [bmv2] [D] [thread 42365] [0.0] [cxt 0] Transmitting packet of size 70 out of port 0
-[20:28:26.192] [bmv2] [D] [thread 42365] [1.0] [cxt 0] Transmitting packet of size 70 out of port 0
-[20:28:26.297] [bmv2] [D] [thread 42360] [2.0] [cxt 0] Processing packet received on port 1
-[20:28:26.297] [bmv2] [D] [thread 42360] [2.0] [cxt 0] Parser 'parser': start
-[20:28:26.297] [bmv2] [D] [thread 42360] [2.0] [cxt 0] Parser 'parser' entering state 'start'
-[20:28:26.297] [bmv2] [D] [thread 42360] [2.0] [cxt 0] Extracting header 'ethernet'
-[20:28:26.297] [bmv2] [D] [thread 42360] [2.0] [cxt 0] Parser state 'start': key is 86dd
-[20:28:26.297] [bmv2] [T] [thread 42360] [2.0] [cxt 0] Bytes parsed: 14
-[20:28:26.297] [bmv2] [D] [thread 42360] [2.0] [cxt 0] Parser 'parser': end
-[20:28:26.297] [bmv2] [D] [thread 42360] [2.0] [cxt 0] Pipeline 'ingress': start
-[20:28:26.297] [bmv2] [T] [thread 42360] [2.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
-[20:28:26.297] [bmv2] [D] [thread 42360] [2.0] [cxt 0] Looking up key:
+[21:44:54.190] [bmv2] [D] [thread 71225] [2.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
+[21:44:54.190] [bmv2] [D] [thread 71225] [2.0] [cxt 0] Action entry is NoAction - 
+[21:44:54.190] [bmv2] [T] [thread 71225] [2.0] [cxt 0] Action NoAction
+[21:44:54.190] [bmv2] [T] [thread 71225] [2.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(193) Condition "meta.is_ingress_border == 1" (node_3) is false
+[21:44:54.190] [bmv2] [T] [thread 71225] [2.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(204) Condition "hdr.mpls.isValid()" (node_6) is false
+[21:44:54.190] [bmv2] [T] [thread 71225] [2.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(209) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:44:54.190] [bmv2] [D] [thread 71225] [2.0] [cxt 0] Pipeline 'ingress': end
+[21:44:54.190] [bmv2] [D] [thread 71225] [2.0] [cxt 0] Egress port is 0
+[21:44:54.191] [bmv2] [D] [thread 71226] [2.0] [cxt 0] Pipeline 'egress': start
+[21:44:54.191] [bmv2] [T] [thread 71226] [2.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(247) Condition "hdr.mpls.isValid()" (node_12) is false
+[21:44:54.191] [bmv2] [D] [thread 71226] [2.0] [cxt 0] Pipeline 'egress': end
+[21:44:54.191] [bmv2] [D] [thread 71226] [2.0] [cxt 0] Deparser 'deparser': start
+[21:44:54.191] [bmv2] [T] [thread 71226] [2.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:44:54.191] [bmv2] [D] [thread 71226] [2.0] [cxt 0] Deparsing header 'ethernet'
+[21:44:54.191] [bmv2] [D] [thread 71226] [2.0] [cxt 0] Deparser 'deparser': end
+[21:44:54.191] [bmv2] [D] [thread 71230] [2.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:44:54.445] [bmv2] [D] [thread 71225] [3.0] [cxt 0] Processing packet received on port 2
+[21:44:54.445] [bmv2] [D] [thread 71225] [3.0] [cxt 0] Parser 'parser': start
+[21:44:54.445] [bmv2] [D] [thread 71225] [3.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:44:54.445] [bmv2] [D] [thread 71225] [3.0] [cxt 0] Extracting header 'ethernet'
+[21:44:54.446] [bmv2] [D] [thread 71225] [3.0] [cxt 0] Parser state 'start': key is 86dd
+[21:44:54.446] [bmv2] [T] [thread 71225] [3.0] [cxt 0] Bytes parsed: 14
+[21:44:54.446] [bmv2] [D] [thread 71225] [3.0] [cxt 0] Parser 'parser': end
+[21:44:54.446] [bmv2] [D] [thread 71225] [3.0] [cxt 0] Pipeline 'ingress': start
+[21:44:54.446] [bmv2] [T] [thread 71225] [3.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[21:44:54.446] [bmv2] [D] [thread 71225] [3.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[21:44:54.446] [bmv2] [D] [thread 71225] [3.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
+[21:44:54.446] [bmv2] [D] [thread 71225] [3.0] [cxt 0] Action entry is NoAction - 
+[21:44:54.446] [bmv2] [T] [thread 71225] [3.0] [cxt 0] Action NoAction
+[21:44:54.446] [bmv2] [T] [thread 71225] [3.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(193) Condition "meta.is_ingress_border == 1" (node_3) is false
+[21:44:54.446] [bmv2] [T] [thread 71225] [3.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(204) Condition "hdr.mpls.isValid()" (node_6) is false
+[21:44:54.446] [bmv2] [T] [thread 71225] [3.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(209) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:44:54.446] [bmv2] [D] [thread 71225] [3.0] [cxt 0] Pipeline 'ingress': end
+[21:44:54.446] [bmv2] [D] [thread 71225] [3.0] [cxt 0] Egress port is 0
+[21:44:54.446] [bmv2] [D] [thread 71226] [3.0] [cxt 0] Pipeline 'egress': start
+[21:44:54.446] [bmv2] [T] [thread 71226] [3.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(247) Condition "hdr.mpls.isValid()" (node_12) is false
+[21:44:54.446] [bmv2] [D] [thread 71226] [3.0] [cxt 0] Pipeline 'egress': end
+[21:44:54.446] [bmv2] [D] [thread 71226] [3.0] [cxt 0] Deparser 'deparser': start
+[21:44:54.446] [bmv2] [T] [thread 71226] [3.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:44:54.446] [bmv2] [D] [thread 71226] [3.0] [cxt 0] Deparsing header 'ethernet'
+[21:44:54.446] [bmv2] [D] [thread 71226] [3.0] [cxt 0] Deparser 'deparser': end
+[21:44:54.446] [bmv2] [D] [thread 71230] [3.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:44:54.675] [bmv2] [D] [thread 71225] [4.0] [cxt 0] Processing packet received on port 2
+[21:44:54.675] [bmv2] [D] [thread 71225] [4.0] [cxt 0] Parser 'parser': start
+[21:44:54.675] [bmv2] [D] [thread 71225] [4.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:44:54.675] [bmv2] [D] [thread 71225] [4.0] [cxt 0] Extracting header 'ethernet'
+[21:44:54.675] [bmv2] [D] [thread 71225] [4.0] [cxt 0] Parser state 'start': key is 86dd
+[21:44:54.675] [bmv2] [T] [thread 71225] [4.0] [cxt 0] Bytes parsed: 14
+[21:44:54.675] [bmv2] [D] [thread 71225] [4.0] [cxt 0] Parser 'parser': end
+[21:44:54.675] [bmv2] [D] [thread 71225] [4.0] [cxt 0] Pipeline 'ingress': start
+[21:44:54.675] [bmv2] [T] [thread 71225] [4.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[21:44:54.675] [bmv2] [D] [thread 71225] [4.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[21:44:54.675] [bmv2] [D] [thread 71225] [4.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
+[21:44:54.675] [bmv2] [D] [thread 71225] [4.0] [cxt 0] Action entry is NoAction - 
+[21:44:54.675] [bmv2] [T] [thread 71225] [4.0] [cxt 0] Action NoAction
+[21:44:54.675] [bmv2] [T] [thread 71225] [4.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(193) Condition "meta.is_ingress_border == 1" (node_3) is false
+[21:44:54.675] [bmv2] [T] [thread 71225] [4.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(204) Condition "hdr.mpls.isValid()" (node_6) is false
+[21:44:54.675] [bmv2] [T] [thread 71225] [4.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(209) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:44:54.675] [bmv2] [D] [thread 71225] [4.0] [cxt 0] Pipeline 'ingress': end
+[21:44:54.675] [bmv2] [D] [thread 71225] [4.0] [cxt 0] Egress port is 0
+[21:44:54.675] [bmv2] [D] [thread 71226] [4.0] [cxt 0] Pipeline 'egress': start
+[21:44:54.675] [bmv2] [T] [thread 71226] [4.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(247) Condition "hdr.mpls.isValid()" (node_12) is false
+[21:44:54.675] [bmv2] [D] [thread 71226] [4.0] [cxt 0] Pipeline 'egress': end
+[21:44:54.675] [bmv2] [D] [thread 71226] [4.0] [cxt 0] Deparser 'deparser': start
+[21:44:54.675] [bmv2] [T] [thread 71226] [4.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:44:54.675] [bmv2] [D] [thread 71226] [4.0] [cxt 0] Deparsing header 'ethernet'
+[21:44:54.675] [bmv2] [D] [thread 71226] [4.0] [cxt 0] Deparser 'deparser': end
+[21:44:54.675] [bmv2] [D] [thread 71230] [4.0] [cxt 0] Transmitting packet of size 210 out of port 0
+[21:44:54.702] [bmv2] [D] [thread 71225] [5.0] [cxt 0] Processing packet received on port 2
+[21:44:54.702] [bmv2] [D] [thread 71225] [5.0] [cxt 0] Parser 'parser': start
+[21:44:54.702] [bmv2] [D] [thread 71225] [5.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:44:54.702] [bmv2] [D] [thread 71225] [5.0] [cxt 0] Extracting header 'ethernet'
+[21:44:54.702] [bmv2] [D] [thread 71225] [5.0] [cxt 0] Parser state 'start': key is 86dd
+[21:44:54.702] [bmv2] [T] [thread 71225] [5.0] [cxt 0] Bytes parsed: 14
+[21:44:54.702] [bmv2] [D] [thread 71225] [5.0] [cxt 0] Parser 'parser': end
+[21:44:54.702] [bmv2] [D] [thread 71225] [5.0] [cxt 0] Pipeline 'ingress': start
+[21:44:54.702] [bmv2] [T] [thread 71225] [5.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[21:44:54.702] [bmv2] [D] [thread 71225] [5.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0002
+
+[21:44:54.702] [bmv2] [D] [thread 71225] [5.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
+[21:44:54.702] [bmv2] [D] [thread 71225] [5.0] [cxt 0] Action entry is NoAction - 
+[21:44:54.702] [bmv2] [T] [thread 71225] [5.0] [cxt 0] Action NoAction
+[21:44:54.702] [bmv2] [T] [thread 71225] [5.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(193) Condition "meta.is_ingress_border == 1" (node_3) is false
+[21:44:54.702] [bmv2] [T] [thread 71225] [5.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(204) Condition "hdr.mpls.isValid()" (node_6) is false
+[21:44:54.702] [bmv2] [T] [thread 71225] [5.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(209) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:44:54.702] [bmv2] [D] [thread 71225] [5.0] [cxt 0] Pipeline 'ingress': end
+[21:44:54.702] [bmv2] [D] [thread 71225] [5.0] [cxt 0] Egress port is 0
+[21:44:54.702] [bmv2] [D] [thread 71226] [5.0] [cxt 0] Pipeline 'egress': start
+[21:44:54.702] [bmv2] [T] [thread 71226] [5.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(247) Condition "hdr.mpls.isValid()" (node_12) is false
+[21:44:54.702] [bmv2] [D] [thread 71226] [5.0] [cxt 0] Pipeline 'egress': end
+[21:44:54.702] [bmv2] [D] [thread 71226] [5.0] [cxt 0] Deparser 'deparser': start
+[21:44:54.702] [bmv2] [T] [thread 71226] [5.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:44:54.702] [bmv2] [D] [thread 71226] [5.0] [cxt 0] Deparsing header 'ethernet'
+[21:44:54.702] [bmv2] [D] [thread 71226] [5.0] [cxt 0] Deparser 'deparser': end
+[21:44:54.702] [bmv2] [D] [thread 71230] [5.0] [cxt 0] Transmitting packet of size 70 out of port 0
+[21:44:56.507] [bmv2] [D] [thread 71225] [6.0] [cxt 0] Processing packet received on port 1
+[21:44:56.507] [bmv2] [D] [thread 71225] [6.0] [cxt 0] Parser 'parser': start
+[21:44:56.507] [bmv2] [D] [thread 71225] [6.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:44:56.507] [bmv2] [D] [thread 71225] [6.0] [cxt 0] Extracting header 'ethernet'
+[21:44:56.507] [bmv2] [D] [thread 71225] [6.0] [cxt 0] Parser state 'start': key is 86dd
+[21:44:56.507] [bmv2] [T] [thread 71225] [6.0] [cxt 0] Bytes parsed: 14
+[21:44:56.507] [bmv2] [D] [thread 71225] [6.0] [cxt 0] Parser 'parser': end
+[21:44:56.507] [bmv2] [D] [thread 71225] [6.0] [cxt 0] Pipeline 'ingress': start
+[21:44:56.507] [bmv2] [T] [thread 71225] [6.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[21:44:56.507] [bmv2] [D] [thread 71225] [6.0] [cxt 0] Looking up key:
 * standard_metadata.ingress_port: 0001
 
-[20:28:26.297] [bmv2] [D] [thread 42360] [2.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
-[20:28:26.297] [bmv2] [D] [thread 42360] [2.0] [cxt 0] Action entry is NoAction - 
-[20:28:26.297] [bmv2] [T] [thread 42360] [2.0] [cxt 0] Action NoAction
-[20:28:26.297] [bmv2] [T] [thread 42360] [2.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(193) Condition "meta.is_ingress_border == 1" (node_3) is false
-[20:28:26.297] [bmv2] [T] [thread 42360] [2.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(204) Condition "hdr.mpls.isValid()" (node_6) is false
-[20:28:26.297] [bmv2] [T] [thread 42360] [2.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(209) Condition "hdr.ipv4.isValid()" (node_8) is false
-[20:28:26.297] [bmv2] [D] [thread 42360] [2.0] [cxt 0] Pipeline 'ingress': end
-[20:28:26.297] [bmv2] [D] [thread 42360] [2.0] [cxt 0] Egress port is 0
-[20:28:26.297] [bmv2] [D] [thread 42361] [2.0] [cxt 0] Pipeline 'egress': start
-[20:28:26.297] [bmv2] [T] [thread 42361] [2.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(247) Condition "hdr.mpls.isValid()" (node_12) is false
-[20:28:26.297] [bmv2] [D] [thread 42361] [2.0] [cxt 0] Pipeline 'egress': end
-[20:28:26.297] [bmv2] [D] [thread 42361] [2.0] [cxt 0] Deparser 'deparser': start
-[20:28:26.297] [bmv2] [T] [thread 42361] [2.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
-[20:28:26.297] [bmv2] [D] [thread 42361] [2.0] [cxt 0] Deparsing header 'ethernet'
-[20:28:26.297] [bmv2] [D] [thread 42361] [2.0] [cxt 0] Deparser 'deparser': end
-[20:28:26.297] [bmv2] [D] [thread 42365] [2.0] [cxt 0] Transmitting packet of size 210 out of port 0
-[20:28:26.353] [bmv2] [D] [thread 42360] [3.0] [cxt 0] Processing packet received on port 2
-[20:28:26.353] [bmv2] [D] [thread 42360] [3.0] [cxt 0] Parser 'parser': start
-[20:28:26.353] [bmv2] [D] [thread 42360] [3.0] [cxt 0] Parser 'parser' entering state 'start'
-[20:28:26.353] [bmv2] [D] [thread 42360] [3.0] [cxt 0] Extracting header 'ethernet'
-[20:28:26.353] [bmv2] [D] [thread 42360] [3.0] [cxt 0] Parser state 'start': key is 86dd
-[20:28:26.353] [bmv2] [T] [thread 42360] [3.0] [cxt 0] Bytes parsed: 14
-[20:28:26.353] [bmv2] [D] [thread 42360] [3.0] [cxt 0] Parser 'parser': end
-[20:28:26.353] [bmv2] [D] [thread 42360] [3.0] [cxt 0] Pipeline 'ingress': start
-[20:28:26.353] [bmv2] [T] [thread 42360] [3.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
-[20:28:26.353] [bmv2] [D] [thread 42360] [3.0] [cxt 0] Looking up key:
-* standard_metadata.ingress_port: 0002
-
-[20:28:26.353] [bmv2] [D] [thread 42360] [3.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
-[20:28:26.353] [bmv2] [D] [thread 42360] [3.0] [cxt 0] Action entry is NoAction - 
-[20:28:26.353] [bmv2] [T] [thread 42360] [3.0] [cxt 0] Action NoAction
-[20:28:26.353] [bmv2] [T] [thread 42360] [3.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(193) Condition "meta.is_ingress_border == 1" (node_3) is false
-[20:28:26.353] [bmv2] [T] [thread 42360] [3.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(204) Condition "hdr.mpls.isValid()" (node_6) is false
-[20:28:26.353] [bmv2] [T] [thread 42360] [3.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(209) Condition "hdr.ipv4.isValid()" (node_8) is false
-[20:28:26.353] [bmv2] [D] [thread 42360] [3.0] [cxt 0] Pipeline 'ingress': end
-[20:28:26.353] [bmv2] [D] [thread 42360] [3.0] [cxt 0] Egress port is 0
-[20:28:26.353] [bmv2] [D] [thread 42361] [3.0] [cxt 0] Pipeline 'egress': start
-[20:28:26.353] [bmv2] [T] [thread 42361] [3.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(247) Condition "hdr.mpls.isValid()" (node_12) is false
-[20:28:26.353] [bmv2] [D] [thread 42361] [3.0] [cxt 0] Pipeline 'egress': end
-[20:28:26.353] [bmv2] [D] [thread 42361] [3.0] [cxt 0] Deparser 'deparser': start
-[20:28:26.353] [bmv2] [T] [thread 42361] [3.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
-[20:28:26.353] [bmv2] [D] [thread 42361] [3.0] [cxt 0] Deparsing header 'ethernet'
-[20:28:26.353] [bmv2] [D] [thread 42361] [3.0] [cxt 0] Deparser 'deparser': end
-[20:28:26.353] [bmv2] [D] [thread 42365] [3.0] [cxt 0] Transmitting packet of size 203 out of port 0
-[20:28:26.672] [bmv2] [D] [thread 42360] [4.0] [cxt 0] Processing packet received on port 2
-[20:28:26.672] [bmv2] [D] [thread 42360] [4.0] [cxt 0] Parser 'parser': start
-[20:28:26.672] [bmv2] [D] [thread 42360] [4.0] [cxt 0] Parser 'parser' entering state 'start'
-[20:28:26.672] [bmv2] [D] [thread 42360] [4.0] [cxt 0] Extracting header 'ethernet'
-[20:28:26.672] [bmv2] [D] [thread 42360] [4.0] [cxt 0] Parser state 'start': key is 86dd
-[20:28:26.672] [bmv2] [T] [thread 42360] [4.0] [cxt 0] Bytes parsed: 14
-[20:28:26.672] [bmv2] [D] [thread 42360] [4.0] [cxt 0] Parser 'parser': end
-[20:28:26.672] [bmv2] [D] [thread 42360] [4.0] [cxt 0] Pipeline 'ingress': start
-[20:28:26.672] [bmv2] [T] [thread 42360] [4.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
-[20:28:26.672] [bmv2] [D] [thread 42360] [4.0] [cxt 0] Looking up key:
-* standard_metadata.ingress_port: 0002
-
-[20:28:26.672] [bmv2] [D] [thread 42360] [4.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
-[20:28:26.672] [bmv2] [D] [thread 42360] [4.0] [cxt 0] Action entry is NoAction - 
-[20:28:26.673] [bmv2] [T] [thread 42360] [4.0] [cxt 0] Action NoAction
-[20:28:26.673] [bmv2] [T] [thread 42360] [4.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(193) Condition "meta.is_ingress_border == 1" (node_3) is false
-[20:28:26.673] [bmv2] [T] [thread 42360] [4.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(204) Condition "hdr.mpls.isValid()" (node_6) is false
-[20:28:26.673] [bmv2] [T] [thread 42360] [4.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(209) Condition "hdr.ipv4.isValid()" (node_8) is false
-[20:28:26.673] [bmv2] [D] [thread 42360] [4.0] [cxt 0] Pipeline 'ingress': end
-[20:28:26.673] [bmv2] [D] [thread 42360] [4.0] [cxt 0] Egress port is 0
-[20:28:26.673] [bmv2] [D] [thread 42361] [4.0] [cxt 0] Pipeline 'egress': start
-[20:28:26.673] [bmv2] [T] [thread 42361] [4.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(247) Condition "hdr.mpls.isValid()" (node_12) is false
-[20:28:26.673] [bmv2] [D] [thread 42361] [4.0] [cxt 0] Pipeline 'egress': end
-[20:28:26.673] [bmv2] [D] [thread 42361] [4.0] [cxt 0] Deparser 'deparser': start
-[20:28:26.673] [bmv2] [T] [thread 42361] [4.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
-[20:28:26.673] [bmv2] [D] [thread 42361] [4.0] [cxt 0] Deparsing header 'ethernet'
-[20:28:26.673] [bmv2] [D] [thread 42361] [4.0] [cxt 0] Deparser 'deparser': end
-[20:28:26.673] [bmv2] [D] [thread 42365] [4.0] [cxt 0] Transmitting packet of size 210 out of port 0
-[20:28:26.704] [bmv2] [D] [thread 42360] [5.0] [cxt 0] Processing packet received on port 2
-[20:28:26.704] [bmv2] [D] [thread 42360] [5.0] [cxt 0] Parser 'parser': start
-[20:28:26.704] [bmv2] [D] [thread 42360] [5.0] [cxt 0] Parser 'parser' entering state 'start'
-[20:28:26.704] [bmv2] [D] [thread 42360] [5.0] [cxt 0] Extracting header 'ethernet'
-[20:28:26.704] [bmv2] [D] [thread 42360] [5.0] [cxt 0] Parser state 'start': key is 86dd
-[20:28:26.704] [bmv2] [T] [thread 42360] [5.0] [cxt 0] Bytes parsed: 14
-[20:28:26.704] [bmv2] [D] [thread 42360] [5.0] [cxt 0] Parser 'parser': end
-[20:28:26.704] [bmv2] [D] [thread 42360] [5.0] [cxt 0] Pipeline 'ingress': start
-[20:28:26.704] [bmv2] [T] [thread 42360] [5.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
-[20:28:26.704] [bmv2] [D] [thread 42360] [5.0] [cxt 0] Looking up key:
-* standard_metadata.ingress_port: 0002
-
-[20:28:26.704] [bmv2] [D] [thread 42360] [5.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
-[20:28:26.704] [bmv2] [D] [thread 42360] [5.0] [cxt 0] Action entry is NoAction - 
-[20:28:26.704] [bmv2] [T] [thread 42360] [5.0] [cxt 0] Action NoAction
-[20:28:26.704] [bmv2] [T] [thread 42360] [5.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(193) Condition "meta.is_ingress_border == 1" (node_3) is false
-[20:28:26.705] [bmv2] [T] [thread 42360] [5.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(204) Condition "hdr.mpls.isValid()" (node_6) is false
-[20:28:26.705] [bmv2] [T] [thread 42360] [5.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(209) Condition "hdr.ipv4.isValid()" (node_8) is false
-[20:28:26.705] [bmv2] [D] [thread 42360] [5.0] [cxt 0] Pipeline 'ingress': end
-[20:28:26.705] [bmv2] [D] [thread 42360] [5.0] [cxt 0] Egress port is 0
-[20:28:26.705] [bmv2] [D] [thread 42361] [5.0] [cxt 0] Pipeline 'egress': start
-[20:28:26.705] [bmv2] [T] [thread 42361] [5.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(247) Condition "hdr.mpls.isValid()" (node_12) is false
-[20:28:26.705] [bmv2] [D] [thread 42361] [5.0] [cxt 0] Pipeline 'egress': end
-[20:28:26.705] [bmv2] [D] [thread 42361] [5.0] [cxt 0] Deparser 'deparser': start
-[20:28:26.705] [bmv2] [T] [thread 42361] [5.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
-[20:28:26.705] [bmv2] [D] [thread 42361] [5.0] [cxt 0] Deparsing header 'ethernet'
-[20:28:26.705] [bmv2] [D] [thread 42361] [5.0] [cxt 0] Deparser 'deparser': end
-[20:28:26.705] [bmv2] [D] [thread 42365] [5.0] [cxt 0] Transmitting packet of size 70 out of port 0
-[20:28:26.767] [bmv2] [D] [thread 42360] [6.0] [cxt 0] Processing packet received on port 1
-[20:28:26.767] [bmv2] [D] [thread 42360] [6.0] [cxt 0] Parser 'parser': start
-[20:28:26.767] [bmv2] [D] [thread 42360] [6.0] [cxt 0] Parser 'parser' entering state 'start'
-[20:28:26.767] [bmv2] [D] [thread 42360] [6.0] [cxt 0] Extracting header 'ethernet'
-[20:28:26.767] [bmv2] [D] [thread 42360] [6.0] [cxt 0] Parser state 'start': key is 86dd
-[20:28:26.767] [bmv2] [T] [thread 42360] [6.0] [cxt 0] Bytes parsed: 14
-[20:28:26.767] [bmv2] [D] [thread 42360] [6.0] [cxt 0] Parser 'parser': end
-[20:28:26.767] [bmv2] [D] [thread 42360] [6.0] [cxt 0] Pipeline 'ingress': start
-[20:28:26.767] [bmv2] [T] [thread 42360] [6.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
-[20:28:26.767] [bmv2] [D] [thread 42360] [6.0] [cxt 0] Looking up key:
-* standard_metadata.ingress_port: 0001
-
-[20:28:26.767] [bmv2] [D] [thread 42360] [6.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
-[20:28:26.767] [bmv2] [D] [thread 42360] [6.0] [cxt 0] Action entry is NoAction - 
-[20:28:26.767] [bmv2] [T] [thread 42360] [6.0] [cxt 0] Action NoAction
-[20:28:26.767] [bmv2] [T] [thread 42360] [6.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(193) Condition "meta.is_ingress_border == 1" (node_3) is false
-[20:28:26.767] [bmv2] [T] [thread 42360] [6.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(204) Condition "hdr.mpls.isValid()" (node_6) is false
-[20:28:26.767] [bmv2] [T] [thread 42360] [6.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(209) Condition "hdr.ipv4.isValid()" (node_8) is false
-[20:28:26.767] [bmv2] [D] [thread 42360] [6.0] [cxt 0] Pipeline 'ingress': end
-[20:28:26.767] [bmv2] [D] [thread 42360] [6.0] [cxt 0] Egress port is 0
-[20:28:26.767] [bmv2] [D] [thread 42361] [6.0] [cxt 0] Pipeline 'egress': start
-[20:28:26.767] [bmv2] [T] [thread 42361] [6.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(247) Condition "hdr.mpls.isValid()" (node_12) is false
-[20:28:26.767] [bmv2] [D] [thread 42361] [6.0] [cxt 0] Pipeline 'egress': end
-[20:28:26.767] [bmv2] [D] [thread 42361] [6.0] [cxt 0] Deparser 'deparser': start
-[20:28:26.767] [bmv2] [T] [thread 42361] [6.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
-[20:28:26.767] [bmv2] [D] [thread 42361] [6.0] [cxt 0] Deparsing header 'ethernet'
-[20:28:26.767] [bmv2] [D] [thread 42361] [6.0] [cxt 0] Deparser 'deparser': end
-[20:28:26.767] [bmv2] [D] [thread 42365] [6.0] [cxt 0] Transmitting packet of size 210 out of port 0
-[20:28:27.603] [bmv2] [D] [thread 42360] [7.0] [cxt 0] Processing packet received on port 2
-[20:28:27.603] [bmv2] [D] [thread 42360] [7.0] [cxt 0] Parser 'parser': start
-[20:28:27.603] [bmv2] [D] [thread 42360] [7.0] [cxt 0] Parser 'parser' entering state 'start'
-[20:28:27.603] [bmv2] [D] [thread 42360] [7.0] [cxt 0] Extracting header 'ethernet'
-[20:28:27.603] [bmv2] [D] [thread 42360] [7.0] [cxt 0] Parser state 'start': key is 86dd
-[20:28:27.603] [bmv2] [T] [thread 42360] [7.0] [cxt 0] Bytes parsed: 14
-[20:28:27.603] [bmv2] [D] [thread 42360] [7.0] [cxt 0] Parser 'parser': end
-[20:28:27.603] [bmv2] [D] [thread 42360] [7.0] [cxt 0] Pipeline 'ingress': start
-[20:28:27.603] [bmv2] [T] [thread 42360] [7.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
-[20:28:27.603] [bmv2] [D] [thread 42360] [7.0] [cxt 0] Looking up key:
-* standard_metadata.ingress_port: 0002
-
-[20:28:27.603] [bmv2] [D] [thread 42360] [7.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
-[20:28:27.603] [bmv2] [D] [thread 42360] [7.0] [cxt 0] Action entry is NoAction - 
-[20:28:27.603] [bmv2] [T] [thread 42360] [7.0] [cxt 0] Action NoAction
-[20:28:27.603] [bmv2] [T] [thread 42360] [7.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(193) Condition "meta.is_ingress_border == 1" (node_3) is false
-[20:28:27.603] [bmv2] [T] [thread 42360] [7.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(204) Condition "hdr.mpls.isValid()" (node_6) is false
-[20:28:27.603] [bmv2] [T] [thread 42360] [7.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(209) Condition "hdr.ipv4.isValid()" (node_8) is false
-[20:28:27.603] [bmv2] [D] [thread 42360] [7.0] [cxt 0] Pipeline 'ingress': end
-[20:28:27.603] [bmv2] [D] [thread 42360] [7.0] [cxt 0] Egress port is 0
-[20:28:27.603] [bmv2] [D] [thread 42361] [7.0] [cxt 0] Pipeline 'egress': start
-[20:28:27.603] [bmv2] [T] [thread 42361] [7.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(247) Condition "hdr.mpls.isValid()" (node_12) is false
-[20:28:27.603] [bmv2] [D] [thread 42361] [7.0] [cxt 0] Pipeline 'egress': end
-[20:28:27.603] [bmv2] [D] [thread 42361] [7.0] [cxt 0] Deparser 'deparser': start
-[20:28:27.603] [bmv2] [T] [thread 42361] [7.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
-[20:28:27.603] [bmv2] [D] [thread 42361] [7.0] [cxt 0] Deparsing header 'ethernet'
-[20:28:27.603] [bmv2] [D] [thread 42361] [7.0] [cxt 0] Deparser 'deparser': end
-[20:28:27.603] [bmv2] [D] [thread 42365] [7.0] [cxt 0] Transmitting packet of size 210 out of port 0
-[20:28:27.729] [bmv2] [D] [thread 42360] [8.0] [cxt 0] Processing packet received on port 2
-[20:28:27.729] [bmv2] [D] [thread 42360] [8.0] [cxt 0] Parser 'parser': start
-[20:28:27.729] [bmv2] [D] [thread 42360] [8.0] [cxt 0] Parser 'parser' entering state 'start'
-[20:28:27.729] [bmv2] [D] [thread 42360] [8.0] [cxt 0] Extracting header 'ethernet'
-[20:28:27.729] [bmv2] [D] [thread 42360] [8.0] [cxt 0] Parser state 'start': key is 86dd
-[20:28:27.729] [bmv2] [T] [thread 42360] [8.0] [cxt 0] Bytes parsed: 14
-[20:28:27.729] [bmv2] [D] [thread 42360] [8.0] [cxt 0] Parser 'parser': end
-[20:28:27.729] [bmv2] [D] [thread 42360] [8.0] [cxt 0] Pipeline 'ingress': start
-[20:28:27.729] [bmv2] [T] [thread 42360] [8.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
-[20:28:27.729] [bmv2] [D] [thread 42360] [8.0] [cxt 0] Looking up key:
-* standard_metadata.ingress_port: 0002
-
-[20:28:27.729] [bmv2] [D] [thread 42360] [8.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
-[20:28:27.729] [bmv2] [D] [thread 42360] [8.0] [cxt 0] Action entry is NoAction - 
-[20:28:27.729] [bmv2] [T] [thread 42360] [8.0] [cxt 0] Action NoAction
-[20:28:27.729] [bmv2] [T] [thread 42360] [8.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(193) Condition "meta.is_ingress_border == 1" (node_3) is false
-[20:28:27.729] [bmv2] [T] [thread 42360] [8.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(204) Condition "hdr.mpls.isValid()" (node_6) is false
-[20:28:27.729] [bmv2] [T] [thread 42360] [8.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(209) Condition "hdr.ipv4.isValid()" (node_8) is false
-[20:28:27.729] [bmv2] [D] [thread 42360] [8.0] [cxt 0] Pipeline 'ingress': end
-[20:28:27.729] [bmv2] [D] [thread 42360] [8.0] [cxt 0] Egress port is 0
-[20:28:27.729] [bmv2] [D] [thread 42361] [8.0] [cxt 0] Pipeline 'egress': start
-[20:28:27.729] [bmv2] [T] [thread 42361] [8.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(247) Condition "hdr.mpls.isValid()" (node_12) is false
-[20:28:27.729] [bmv2] [D] [thread 42361] [8.0] [cxt 0] Pipeline 'egress': end
-[20:28:27.729] [bmv2] [D] [thread 42361] [8.0] [cxt 0] Deparser 'deparser': start
-[20:28:27.729] [bmv2] [T] [thread 42361] [8.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
-[20:28:27.729] [bmv2] [D] [thread 42361] [8.0] [cxt 0] Deparsing header 'ethernet'
-[20:28:27.729] [bmv2] [D] [thread 42361] [8.0] [cxt 0] Deparser 'deparser': end
-[20:28:27.729] [bmv2] [D] [thread 42365] [8.0] [cxt 0] Transmitting packet of size 70 out of port 0
-[20:29:10.382] [bmv2] [D] [thread 43407] Set default default entry for table 'MyIngress.check_is_ingress_border': NoAction - 
-[20:29:10.382] [bmv2] [D] [thread 43407] Set default default entry for table 'MyIngress.fec_to_label': NoAction - 
-[20:29:10.382] [bmv2] [D] [thread 43407] Set default default entry for table 'MyIngress.mpls_tbl': MyIngress.drop - 
-[20:29:10.382] [bmv2] [D] [thread 43407] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
-[20:29:10.382] [bmv2] [D] [thread 43407] Set default default entry for table 'MyEgress.check_is_egress_border': NoAction - 
-[20:29:10.384] [bmv2] [D] [thread 43407] simple_switch target has been notified of a config swap
-[20:29:10.597] [bmv2] [D] [thread 43411] Entry 0 added to table 'MyIngress.mpls_tbl'
-[20:29:10.598] [bmv2] [D] [thread 43411] Dumping entry 0
+[21:44:56.507] [bmv2] [D] [thread 71225] [6.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
+[21:44:56.507] [bmv2] [D] [thread 71225] [6.0] [cxt 0] Action entry is NoAction - 
+[21:44:56.507] [bmv2] [T] [thread 71225] [6.0] [cxt 0] Action NoAction
+[21:44:56.507] [bmv2] [T] [thread 71225] [6.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(193) Condition "meta.is_ingress_border == 1" (node_3) is false
+[21:44:56.507] [bmv2] [T] [thread 71225] [6.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(204) Condition "hdr.mpls.isValid()" (node_6) is false
+[21:44:56.507] [bmv2] [T] [thread 71225] [6.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(209) Condition "hdr.ipv4.isValid()" (node_8) is false
+[21:44:56.507] [bmv2] [D] [thread 71225] [6.0] [cxt 0] Pipeline 'ingress': end
+[21:44:56.507] [bmv2] [D] [thread 71225] [6.0] [cxt 0] Egress port is 0
+[21:44:56.507] [bmv2] [D] [thread 71226] [6.0] [cxt 0] Pipeline 'egress': start
+[21:44:56.507] [bmv2] [T] [thread 71226] [6.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(247) Condition "hdr.mpls.isValid()" (node_12) is false
+[21:44:56.507] [bmv2] [D] [thread 71226] [6.0] [cxt 0] Pipeline 'egress': end
+[21:44:56.507] [bmv2] [D] [thread 71226] [6.0] [cxt 0] Deparser 'deparser': start
+[21:44:56.507] [bmv2] [T] [thread 71226] [6.0] [cxt 0] Skipping checksum 'cksum' update because condition not met
+[21:44:56.507] [bmv2] [D] [thread 71226] [6.0] [cxt 0] Deparsing header 'ethernet'
+[21:44:56.507] [bmv2] [D] [thread 71226] [6.0] [cxt 0] Deparser 'deparser': end
+[21:44:56.507] [bmv2] [D] [thread 71230] [6.0] [cxt 0] Transmitting packet of size 203 out of port 0
+[21:45:01.818] [bmv2] [D] [thread 71693] Set default default entry for table 'MyIngress.check_is_ingress_border': NoAction - 
+[21:45:01.818] [bmv2] [D] [thread 71693] Set default default entry for table 'MyIngress.fec_to_label': NoAction - 
+[21:45:01.818] [bmv2] [D] [thread 71693] Set default default entry for table 'MyIngress.mpls_tbl': MyIngress.drop - 
+[21:45:01.818] [bmv2] [D] [thread 71693] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[21:45:01.818] [bmv2] [D] [thread 71693] Set default default entry for table 'MyEgress.check_is_egress_border': NoAction - 
+[21:45:01.825] [bmv2] [D] [thread 71693] simple_switch target has been notified of a config swap
+[21:45:02.262] [bmv2] [D] [thread 71699] Entry 0 added to table 'MyIngress.mpls_tbl'
+[21:45:02.262] [bmv2] [D] [thread 71699] Dumping entry 0
 Match key:
-* hdr.mpls.label      : EXACT     000003
+* hdr.mpls.label      : EXACT     00012c
 Action entry: MyIngress.mpls_forward - 60400,2,
 
+[21:45:08.401] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Processing packet received on port 1
+[21:45:08.401] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Parser 'parser': start
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Extracting header 'ethernet'
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Parser state 'start': key is 8847
+[21:45:08.402] [bmv2] [T] [thread 71225] [7.0] [cxt 0] Bytes parsed: 14
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Parser 'parser' entering state 'parse_mpls'
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Extracting header 'mpls'
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Parser state 'parse_mpls' has no switch, going to default next state
+[21:45:08.402] [bmv2] [T] [thread 71225] [7.0] [cxt 0] Bytes parsed: 18
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Extracting header 'ipv4'
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:08.402] [bmv2] [T] [thread 71225] [7.0] [cxt 0] Bytes parsed: 38
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Parser 'parser': end
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Pipeline 'ingress': start
+[21:45:08.402] [bmv2] [T] [thread 71225] [7.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Action entry is NoAction - 
+[21:45:08.402] [bmv2] [T] [thread 71225] [7.0] [cxt 0] Action NoAction
+[21:45:08.402] [bmv2] [T] [thread 71225] [7.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(193) Condition "meta.is_ingress_border == 1" (node_3) is false
+[21:45:08.402] [bmv2] [T] [thread 71225] [7.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(204) Condition "hdr.mpls.isValid()" (node_6) is true
+[21:45:08.402] [bmv2] [T] [thread 71225] [7.0] [cxt 0] Applying table 'MyIngress.mpls_tbl'
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Looking up key:
+* hdr.mpls.label      : 00012c
+
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Table 'MyIngress.mpls_tbl': hit with handle 0
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.mpls.label      : EXACT     00012c
+Action entry: MyIngress.mpls_forward - 60400,2,
+
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Action entry is MyIngress.mpls_forward - 60400,2,
+[21:45:08.402] [bmv2] [T] [thread 71225] [7.0] [cxt 0] Action MyIngress.mpls_forward
+[21:45:08.402] [bmv2] [T] [thread 71225] [7.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(149) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[21:45:08.402] [bmv2] [T] [thread 71225] [7.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(150) Primitive hdr.ethernet.dstAddr = dstAddr
+[21:45:08.402] [bmv2] [T] [thread 71225] [7.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(152) Primitive standard_metadata.egress_spec = port
+[21:45:08.402] [bmv2] [T] [thread 71225] [7.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(153) Primitive hdr.mpls.ttl = hdr.mpls.ttl - 1
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Pipeline 'ingress': end
+[21:45:08.402] [bmv2] [D] [thread 71225] [7.0] [cxt 0] Egress port is 2
+[21:45:08.402] [bmv2] [D] [thread 71228] [7.0] [cxt 0] Pipeline 'egress': start
+[21:45:08.402] [bmv2] [T] [thread 71228] [7.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(247) Condition "hdr.mpls.isValid()" (node_12) is true
+[21:45:08.402] [bmv2] [T] [thread 71228] [7.0] [cxt 0] Applying table 'MyEgress.check_is_egress_border'
+[21:45:08.402] [bmv2] [D] [thread 71228] [7.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0002
+
+[21:45:08.402] [bmv2] [D] [thread 71228] [7.0] [cxt 0] Table 'MyEgress.check_is_egress_border': miss
+[21:45:08.402] [bmv2] [D] [thread 71228] [7.0] [cxt 0] Action entry is NoAction - 
+[21:45:08.402] [bmv2] [T] [thread 71228] [7.0] [cxt 0] Action NoAction
+[21:45:08.402] [bmv2] [D] [thread 71228] [7.0] [cxt 0] Pipeline 'egress': end
+[21:45:08.402] [bmv2] [D] [thread 71228] [7.0] [cxt 0] Deparser 'deparser': start
+[21:45:08.402] [bmv2] [D] [thread 71228] [7.0] [cxt 0] Updating checksum 'cksum'
+[21:45:08.402] [bmv2] [D] [thread 71228] [7.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:08.402] [bmv2] [D] [thread 71228] [7.0] [cxt 0] Deparsing header 'mpls'
+[21:45:08.402] [bmv2] [D] [thread 71228] [7.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:08.402] [bmv2] [D] [thread 71228] [7.0] [cxt 0] Deparser 'deparser': end
+[21:45:08.402] [bmv2] [D] [thread 71230] [7.0] [cxt 0] Transmitting packet of size 102 out of port 2
+[21:45:08.474] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Processing packet received on port 1
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Parser 'parser': start
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Extracting header 'ethernet'
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Parser state 'start': key is 8847
+[21:45:08.475] [bmv2] [T] [thread 71225] [8.0] [cxt 0] Bytes parsed: 14
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Parser 'parser' entering state 'parse_mpls'
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Extracting header 'mpls'
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Parser state 'parse_mpls' has no switch, going to default next state
+[21:45:08.475] [bmv2] [T] [thread 71225] [8.0] [cxt 0] Bytes parsed: 18
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Extracting header 'ipv4'
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Parser state 'parse_ipv4' has no switch, going to default next state
+[21:45:08.475] [bmv2] [T] [thread 71225] [8.0] [cxt 0] Bytes parsed: 38
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Parser 'parser': end
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Pipeline 'ingress': start
+[21:45:08.475] [bmv2] [T] [thread 71225] [8.0] [cxt 0] Applying table 'MyIngress.check_is_ingress_border'
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Looking up key:
+* standard_metadata.ingress_port: 0001
+
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Table 'MyIngress.check_is_ingress_border': miss
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Action entry is NoAction - 
+[21:45:08.475] [bmv2] [T] [thread 71225] [8.0] [cxt 0] Action NoAction
+[21:45:08.475] [bmv2] [T] [thread 71225] [8.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(193) Condition "meta.is_ingress_border == 1" (node_3) is false
+[21:45:08.475] [bmv2] [T] [thread 71225] [8.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(204) Condition "hdr.mpls.isValid()" (node_6) is true
+[21:45:08.475] [bmv2] [T] [thread 71225] [8.0] [cxt 0] Applying table 'MyIngress.mpls_tbl'
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Looking up key:
+* hdr.mpls.label      : 00012c
+
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Table 'MyIngress.mpls_tbl': hit with handle 0
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.mpls.label      : EXACT     00012c
+Action entry: MyIngress.mpls_forward - 60400,2,
+
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Action entry is MyIngress.mpls_forward - 60400,2,
+[21:45:08.475] [bmv2] [T] [thread 71225] [8.0] [cxt 0] Action MyIngress.mpls_forward
+[21:45:08.475] [bmv2] [T] [thread 71225] [8.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(149) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[21:45:08.475] [bmv2] [T] [thread 71225] [8.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(150) Primitive hdr.ethernet.dstAddr = dstAddr
+[21:45:08.475] [bmv2] [T] [thread 71225] [8.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(152) Primitive standard_metadata.egress_spec = port
+[21:45:08.475] [bmv2] [T] [thread 71225] [8.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(153) Primitive hdr.mpls.ttl = hdr.mpls.ttl - 1
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Pipeline 'ingress': end
+[21:45:08.475] [bmv2] [D] [thread 71225] [8.0] [cxt 0] Egress port is 2
+[21:45:08.475] [bmv2] [D] [thread 71228] [8.0] [cxt 0] Pipeline 'egress': start
+[21:45:08.475] [bmv2] [T] [thread 71228] [8.0] [cxt 0] /home/mario/Escritorio/TFG/p4-utils/escenarios/MPLS/mpls.p4(247) Condition "hdr.mpls.isValid()" (node_12) is true
+[21:45:08.475] [bmv2] [T] [thread 71228] [8.0] [cxt 0] Applying table 'MyEgress.check_is_egress_border'
+[21:45:08.475] [bmv2] [D] [thread 71228] [8.0] [cxt 0] Looking up key:
+* standard_metadata.egress_port: 0002
+
+[21:45:08.475] [bmv2] [D] [thread 71228] [8.0] [cxt 0] Table 'MyEgress.check_is_egress_border': miss
+[21:45:08.475] [bmv2] [D] [thread 71228] [8.0] [cxt 0] Action entry is NoAction - 
+[21:45:08.475] [bmv2] [T] [thread 71228] [8.0] [cxt 0] Action NoAction
+[21:45:08.475] [bmv2] [D] [thread 71228] [8.0] [cxt 0] Pipeline 'egress': end
+[21:45:08.475] [bmv2] [D] [thread 71228] [8.0] [cxt 0] Deparser 'deparser': start
+[21:45:08.475] [bmv2] [D] [thread 71228] [8.0] [cxt 0] Updating checksum 'cksum'
+[21:45:08.475] [bmv2] [D] [thread 71228] [8.0] [cxt 0] Deparsing header 'ethernet'
+[21:45:08.475] [bmv2] [D] [thread 71228] [8.0] [cxt 0] Deparsing header 'mpls'
+[21:45:08.475] [bmv2] [D] [thread 71228] [8.0] [cxt 0] Deparsing header 'ipv4'
+[21:45:08.475] [bmv2] [D] [thread 71228] [8.0] [cxt 0] Deparser 'deparser': end
+[21:45:08.475] [bmv2] [D] [thread 71230] [8.0] [cxt 0] Transmitting packet of size 102 out of port 2
+open: No such file or directory
+open: No such file or directory
 open: No such file or directory
 open: No such file or directory
 open: No such file or directory
